@@ -1,0 +1,39 @@
+// partials
+@use "./modules/breakpoints";
+
+// modules
+@use "./modules/test.scss";
+@use "./modules/theme.scss";
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: theme.$background;
+  // margin: 0;
+  // padding: 0;
+}
+
+.page-block {
+  height: 100vh; // % of viewport aka screen viewing area
+  width: 100%; //% of parent component
+}
+
+/************   NOTES    ************
+@mixin flex($justify: center) {
+  // add parameter $justify to flex() function -> default value is center
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+$danger: red;
+.btn {
+  color: $primary;
+  &--danger {
+    color: $danger;
+  }
+  &__label{
+    ...
+  }
+}
+
+*/

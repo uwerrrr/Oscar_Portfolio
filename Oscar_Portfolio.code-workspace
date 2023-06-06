@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../Jobs/Nology/Training/NologyCodeAlong"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Oscar_Portfolio"
+  }
+}

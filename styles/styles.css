@@ -1,0 +1,36 @@
+.test--border {
+  border: black solid 1px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #f8f7f2;
+}
+
+.page-block {
+  height: 100vh;
+  width: 100%;
+}
+
+/************   NOTES    ************
+@mixin flex($justify: center) {
+  // add parameter $justify to flex() function -> default value is center
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+$danger: red;
+.btn {
+  color: $primary;
+  &--danger {
+    color: $danger;
+  }
+  &__label{
+    ...
+  }
+}
+
+*/
+
+/*# sourceMappingURL=styles.css.map */
