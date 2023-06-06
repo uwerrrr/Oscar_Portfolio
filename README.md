@@ -1,5 +1,7 @@
 # Welcome to Oscar portfolio
 
-This is the GitHub repo of my personal portfolio.
+### Welcome to Oscar's professional portfolio, hosted on GitHub.
 
-You can access the deployed portfolio here: [link]
+Within this portfolio, you will gain insights into my background, skills, and experiences. Additionally, you will have the opportunity to explore the projects I have completed. Should you wish to get in touch, a contact form is conveniently provided.
+
+Feel free to access my portfolio [here].
