@@ -2,11 +2,20 @@
 
 // color palette
 $jetBlack: #363430;
-$silver: #c4c2c0;
+// $silver: #c4c2c0;
+$silver: #7a7777fd;
 $babyPowder: #f8f7f2;
+$lavender: #dae6fe;
 $vistaBlue: #a0adec;
 $glaucousBlue: #6e85b7;
 $coralPink: #ff8d83;
 
 // theme
-$background: $babyPowder;
+$backgroundMain: $babyPowder;
+$backgroundSecond: #bdcef0;
+// $backgroundSecond: rgb(248, 247, 242);
+
+// text
+$textMain: $jetBlack;
+$textSecond: $silver;
+$textBright: $babyPowder;

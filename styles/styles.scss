@@ -4,21 +4,165 @@
 // modules
 @use "./modules/test.scss";
 @use "./modules/theme.scss";
+@use "./modules/media-queries.scss" as mq;
 
+// mixins
+@mixin flex($justify: flex-start, $align: stretch) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin flexVertical($justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin sectionBlock {
+  padding: 0 50px; /* Add padding to the left and right */
+  max-width: 850px;
+  min-width: 100px;
+
+  height: 100vh;
+}
+// classes
 body {
   font-family: "Outfit", sans-serif;
-  background-color: theme.$background;
-  // margin: 0;
-  // padding: 0;
+  background-color: theme.$backgroundMain;
+  margin: 0;
+  padding: 0;
+
+  color: theme.$textMain;
 }
 
 .page-block {
-  height: 100vh; // % of viewport aka screen viewing area
+  @include flex($justify: center);
+  min-height: 100vh; // % of viewport aka screen viewing area
   width: 100%; //% of parent component
+  padding-top: 50px;
+  &--main {
+    background-color: theme.$backgroundMain;
+  }
+  &--second {
+    background-color: theme.$backgroundSecond;
+  }
+  &--flex-align-center {
+    align-items: center;
+  }
+}
+
+.text-color {
+  &--main {
+    color: theme.$textMain;
+  }
+  &--second {
+    color: theme.$textSecond;
+  }
+  &--bright {
+    color: theme.$textBright;
+  }
+}
+
+.section-head {
+  &__title {
+    text-align: left;
+    align-self: flex-start;
+    font-size: 32px;
+    margin-bottom: auto;
+    &--landing {
+      font-size: 18px;
+    }
+  }
+}
+
+.link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline theme.$coralPink;
+    // color: theme.$coralPink;
+
+    color: theme.$babyPowder;
+    background-color: theme.$silver;
+  }
+  &__hidden-album {
+    background-color: theme.$babyPowder;
+    color: theme.$silver;
+  }
+}
+
+// sections
+.landing {
+  @include flexVertical();
+  // margin-top: 50px;
+
+  &__head {
+    text-align: left;
+
+    &__text {
+      @extend .text-color--second;
+      font-weight: 600;
+      &--right {
+        text-align: end;
+      }
+      &--h1 {
+        font-size: 48px;
+      }
+      &--h2 {
+        font-size: 20px;
+      }
+      &--h3 {
+        // @extend .section-title;
+        font-size: 18px;
+      }
+    }
+  }
+  &__bottom {
+    @include flex($align: flex-end);
+    margin-top: auto;
+    &__img {
+      $width: 250px;
+      $height: 250px;
+      $radius: $width * 0.4;
+      width: $width;
+      height: $height;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+      border: 15px solid white;
+      border-bottom: none;
+    }
+  }
+}
+
+.about {
+  @include flexVertical();
+  @include sectionBlock();
+  &__content {
+    // margin-top: auto;
+    margin-bottom: auto;
+  }
+  &__text {
+    text-align: justify;
+    line-height: 2;
+  }
+}
+.skills {
+}
+.experience {
+}
+.projects {
+}
+.contact {
 }
 
 /************   NOTES    ************
 @mixin flex($justify: center) {
+  // add parameter $justify to flex() function -> default value is center
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+@mixin flexVerticle($justify: center) {
   // add parameter $justify to flex() function -> default value is center
   display: flex;
   justify-content: $justify;

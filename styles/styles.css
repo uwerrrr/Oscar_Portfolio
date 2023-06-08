@@ -5,15 +5,128 @@
 body {
   font-family: "Outfit", sans-serif;
   background-color: #f8f7f2;
+  margin: 0;
+  padding: 0;
+  color: #363430;
 }
 
 .page-block {
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
   width: 100%;
+  padding-top: 50px;
+}
+.page-block--main {
+  background-color: #f8f7f2;
+}
+.page-block--second {
+  background-color: #bdcef0;
+}
+.page-block--flex-align-center {
+  align-items: center;
+}
+
+.text-color--main {
+  color: #363430;
+}
+.text-color--second, .landing__head__text {
+  color: rgba(122, 119, 119, 0.9921568627);
+}
+.text-color--bright {
+  color: #f8f7f2;
+}
+
+.section-head__title {
+  text-align: left;
+  align-self: flex-start;
+  font-size: 32px;
+  margin-bottom: auto;
+}
+.section-head__title--landing {
+  font-size: 18px;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline #ff8d83;
+  color: #f8f7f2;
+  background-color: rgba(122, 119, 119, 0.9921568627);
+}
+.link__hidden-album {
+  background-color: #f8f7f2;
+  color: rgba(122, 119, 119, 0.9921568627);
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.landing__head {
+  text-align: left;
+}
+.landing__head__text {
+  font-weight: 600;
+}
+.landing__head__text--right {
+  text-align: end;
+}
+.landing__head__text--h1 {
+  font-size: 48px;
+}
+.landing__head__text--h2 {
+  font-size: 20px;
+}
+.landing__head__text--h3 {
+  font-size: 18px;
+}
+.landing__bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: auto;
+}
+.landing__bottom__img {
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border: 15px solid white;
+  border-bottom: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 0 50px; /* Add padding to the left and right */
+  max-width: 850px;
+  min-width: 100px;
+  height: 100vh;
+}
+.about__content {
+  margin-bottom: auto;
+}
+.about__text {
+  text-align: justify;
+  line-height: 2;
 }
 
 /************   NOTES    ************
 @mixin flex($justify: center) {
+  // add parameter $justify to flex() function -> default value is center
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+@mixin flexVerticle($justify: center) {
   // add parameter $justify to flex() function -> default value is center
   display: flex;
   justify-content: $justify;
