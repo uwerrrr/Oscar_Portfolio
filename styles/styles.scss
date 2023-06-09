@@ -19,11 +19,27 @@
   align-items: $align;
 }
 @mixin sectionBlock {
-  padding: 0 50px; /* Add padding to the left and right */
   max-width: 850px;
-  min-width: 100px;
+  width: 100%;
 
-  height: 100vh;
+  min-height: 100vh;
+
+  @include mq.phone {
+    padding: 0 60px; /* Add padding to the left and right */
+  }
+  @include mq.tablet {
+    padding: 0 70px; /* Add padding to the left and right */
+  }
+  @include mq.landscape-tablet {
+    padding: 0 100px; /* Add padding to the left and right */
+  }
+  @include mq.laptop {
+    padding: 0 120px; /* Add padding to the left and right */
+  }
+
+  @include mq.desktop {
+    padding: 0 140px; /* Add padding to the left and right */
+  }
 }
 // classes
 body {
@@ -68,7 +84,7 @@ body {
     text-align: left;
     align-self: flex-start;
     font-size: 32px;
-    margin-bottom: auto;
+    // margin-bottom: auto;
     &--landing {
       font-size: 18px;
     }
@@ -138,15 +154,32 @@ body {
   @include flexVertical();
   @include sectionBlock();
   &__content {
-    // margin-top: auto;
+    margin-top: auto;
     margin-bottom: auto;
   }
   &__text {
     text-align: justify;
     line-height: 2;
+    margin-bottom: 60px;
   }
 }
-.skills {
+.techstacks {
+  @include flexVertical();
+  // @include flexVertical($align: center);
+  @include sectionBlock();
+  &__content {
+    @include flex($justify: space-around);
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  &__techs {
+    font-size: xx-large;
+  }
+  &__icon {
+    color: theme.$glaucousBlue;
+  }
 }
 .experience {
 }

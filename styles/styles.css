@@ -42,7 +42,6 @@ body {
   text-align: left;
   align-self: flex-start;
   font-size: 32px;
-  margin-bottom: auto;
 }
 .section-head__title--landing {
   font-size: 18px;
@@ -106,17 +105,93 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
-  padding: 0 50px; /* Add padding to the left and right */
   max-width: 850px;
-  min-width: 100px;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 576px) {
+  .about {
+    padding: 0 60px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .about {
+    padding: 0 70px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .about {
+    padding: 0 100px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .about {
+    padding: 0 120px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .about {
+    padding: 0 140px; /* Add padding to the left and right */
+  }
 }
 .about__content {
+  margin-top: auto;
   margin-bottom: auto;
 }
 .about__text {
   text-align: justify;
   line-height: 2;
+  margin-bottom: 60px;
+}
+
+.techstacks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  max-width: 850px;
+  width: 100%;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 576px) {
+  .techstacks {
+    padding: 0 60px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .techstacks {
+    padding: 0 70px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .techstacks {
+    padding: 0 100px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .techstacks {
+    padding: 0 120px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .techstacks {
+    padding: 0 140px; /* Add padding to the left and right */
+  }
+}
+.techstacks__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.techstacks__techs {
+  font-size: xx-large;
+}
+.techstacks__icon {
+  color: #6e85b7;
 }
 
 /************   NOTES    ************
