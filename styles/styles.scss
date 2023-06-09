@@ -65,6 +65,11 @@ body {
   &--flex-align-center {
     align-items: center;
   }
+  &--inner-shadow {
+    // box-shadow: 0 0 20px rgba(199, 207, 205, 0.5);
+    box-shadow: inset 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
+    // margin-bottom: 50px;
+  }
 }
 
 .text-color {
@@ -87,6 +92,9 @@ body {
     // margin-bottom: auto;
     &--landing {
       font-size: 18px;
+    }
+    &--underline {
+      border-bottom: 2px solid theme.$coralPink;
     }
   }
 }
@@ -142,6 +150,7 @@ body {
       width: $width;
       height: $height;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
       border-top-left-radius: $radius;
       border-top-right-radius: $radius;
       border: 15px solid white;
@@ -184,6 +193,8 @@ body {
 .experience {
 }
 .projects {
+  @include flexVertical();
+  @include sectionBlock();
 }
 .contact {
 }

@@ -22,10 +22,13 @@ body {
   background-color: #f8f7f2;
 }
 .page-block--second {
-  background-color: #bdcef0;
+  background-color: white;
 }
 .page-block--flex-align-center {
   align-items: center;
+}
+.page-block--inner-shadow {
+  box-shadow: inset 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
 }
 
 .text-color--main {
@@ -45,6 +48,9 @@ body {
 }
 .section-head__title--landing {
   font-size: 18px;
+}
+.section-head__title--underline {
+  border-bottom: 2px solid #ff8d83;
 }
 
 .link {
@@ -192,6 +198,41 @@ body {
 }
 .techstacks__icon {
   color: #6e85b7;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  max-width: 850px;
+  width: 100%;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 576px) {
+  .projects {
+    padding: 0 60px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .projects {
+    padding: 0 70px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .projects {
+    padding: 0 100px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .projects {
+    padding: 0 120px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .projects {
+    padding: 0 140px; /* Add padding to the left and right */
+  }
 }
 
 /************   NOTES    ************
