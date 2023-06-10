@@ -118,7 +118,7 @@ body {
   }
 }
 
-// sections
+///////// SECTIONS //////////////
 
 //landing
 .landing {
@@ -234,22 +234,6 @@ body {
         display: none;
       }
     }
-
-    //     .cards::-webkit-scrollbar {
-    //   height: 7px;
-    // }
-
-    // .cards::-webkit-scrollbar-thumb, .cards::-webkit-scrollbar-track {
-    //   border-radius: 92px;
-    // }
-
-    // .cards::-webkit-scrollbar-thumb {
-    //   background: var(--darkred);
-    // }
-
-    // .cards::-webkit-scrollbar-track {
-    //   background: var(--thumb);
-    // }
   }
   &__card {
     // @include flexVertical();
