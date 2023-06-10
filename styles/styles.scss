@@ -22,13 +22,15 @@
   max-width: 850px;
   width: 100%;
 
+  box-sizing: border-box;
+
   min-height: 100vh;
 
   @include mq.phone {
-    padding: 0 60px; /* Add padding to the left and right */
+    padding: 0 40px; /* Add padding to the left and right */
   }
   @include mq.tablet {
-    padding: 0 70px; /* Add padding to the left and right */
+    padding: 0 60px; /* Add padding to the left and right */
   }
   @include mq.landscape-tablet {
     padding: 0 100px; /* Add padding to the left and right */
@@ -41,6 +43,7 @@
     padding: 0 140px; /* Add padding to the left and right */
   }
 }
+
 // classes
 body {
   font-family: "Outfit", sans-serif;
@@ -56,6 +59,7 @@ body {
   min-height: 100vh; // % of viewport aka screen viewing area
   width: 100%; //% of parent component
   padding-top: 50px;
+
   &--main {
     background-color: theme.$backgroundMain;
   }
@@ -67,7 +71,7 @@ body {
   }
   &--inner-shadow {
     // box-shadow: 0 0 20px rgba(199, 207, 205, 0.5);
-    box-shadow: inset 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 20px 20px -20px theme.$shadowColor;
     // margin-bottom: 50px;
   }
 }
@@ -115,6 +119,8 @@ body {
 }
 
 // sections
+
+//landing
 .landing {
   @include flexVertical();
   // margin-top: 50px;
@@ -149,7 +155,7 @@ body {
       $radius: $width * 0.4;
       width: $width;
       height: $height;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 20px theme.$shadowColor;
 
       border-top-left-radius: $radius;
       border-top-right-radius: $radius;
@@ -159,6 +165,7 @@ body {
   }
 }
 
+// about
 .about {
   @include flexVertical();
   @include sectionBlock();
@@ -172,6 +179,170 @@ body {
     margin-bottom: 60px;
   }
 }
+.experience {
+}
+
+// projects section
+.projects {
+  @include flexVertical();
+  @include sectionBlock();
+
+  // box-sizing: border-box;
+  &__content {
+    // @include flex();
+    // overflow-x: scroll;
+    display: flex;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    // width: 50%;
+  }
+  &__cards {
+    @include flex();
+
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+
+    width: 100vw;
+
+    // scollbar
+    /* width */
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #edf2f4;
+      border-radius: 14px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: theme.$glaucousBlue;
+      border-radius: 14px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    @include mq.phone {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    //     .cards::-webkit-scrollbar {
+    //   height: 7px;
+    // }
+
+    // .cards::-webkit-scrollbar-thumb, .cards::-webkit-scrollbar-track {
+    //   border-radius: 92px;
+    // }
+
+    // .cards::-webkit-scrollbar-thumb {
+    //   background: var(--darkred);
+    // }
+
+    // .cards::-webkit-scrollbar-track {
+    //   background: var(--thumb);
+    // }
+  }
+  &__card {
+    // @include flexVertical();
+    // color: theme.$glaucousBlue;
+    // flex: 0 0 100%;
+    padding: 20px;
+    // scroll-snap-align: start;
+    transition: all 0.2s;
+
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px theme.$shadowColor;
+
+    flex-shrink: 0; // prevent flex item to shrink
+
+    $cardPhoneWidth: 240px;
+    $cardPhoneHeight: 240px;
+
+    @include mq.phone {
+      width: calc($cardPhoneWidth * 1);
+      height: calc($cardPhoneHeight * 1);
+    }
+    @include mq.tablet {
+      width: calc($cardPhoneWidth * 1.1);
+      height: calc($cardPhoneHeight * 1.1);
+    }
+    @include mq.landscape-tablet {
+      width: calc($cardPhoneWidth * 1.25);
+      height: calc($cardPhoneHeight * 1.25);
+    }
+    @include mq.laptop {
+      width: calc($cardPhoneWidth * 1.25);
+      height: calc($cardPhoneHeight * 1.25);
+    }
+
+    @include mq.desktop {
+      width: calc($cardPhoneWidth * 1.25);
+      height: calc($cardPhoneHeight * 1.25);
+    }
+    margin-left: 10px;
+    margin-right: 10px;
+    &:first-child {
+      margin-left: 20px;
+    }
+    &:last-child {
+      margin-right: 20px;
+    }
+
+    @include flexVertical();
+
+    &__content {
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      margin: 20px 0;
+      max-width: 85%;
+      font-size: 14px;
+    }
+    &__link-wrapper {
+      margin-top: auto;
+    }
+    &__link {
+      text-decoration: none;
+
+      color: white;
+      background: theme.$glaucousBlue;
+
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background 0.2s;
+      &:hover {
+        border: 1px solid theme.$glaucousBlue;
+        color: theme.$glaucousBlue;
+        background: white;
+      }
+    }
+  }
+}
+
+#projectsSection {
+  padding: 0;
+  margin: 0;
+}
+
+#projectsHead {
+  @include sectionBlock();
+  min-height: 0;
+  margin-top: 0;
+}
+
+// tech stacks
 .techstacks {
   @include flexVertical();
   // @include flexVertical($align: center);
@@ -187,15 +358,30 @@ body {
     font-size: xx-large;
   }
   &__icon {
-    color: theme.$glaucousBlue;
+    // color: theme.$glaucousBlue;
+    color: theme.$babyPowder;
   }
 }
-.experience {
-}
-.projects {
-  @include flexVertical();
-  @include sectionBlock();
-}
+// .cards {
+//   display: flex;
+//   padding: 25px 0px;
+//   list-style: none;
+//   overflow-x: scroll;
+//   scroll-snap-type: x mandatory;
+// }
+
+// .card {
+//   display: flex;
+//   flex-direction: column;
+//   flex: 0 0 auto;
+//   padding: 20px;
+//   background-color: red;
+//   border-radius: 16px;
+//   box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+//   scroll-snap-align: start;
+//   transition: all 0.2s;
+// }
+
 .contact {
 }
 

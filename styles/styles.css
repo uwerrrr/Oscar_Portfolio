@@ -22,7 +22,7 @@ body {
   background-color: #f8f7f2;
 }
 .page-block--second {
-  background-color: white;
+  background-color: #bdcef0;
 }
 .page-block--flex-align-center {
   align-items: center;
@@ -113,16 +113,17 @@ body {
   align-items: stretch;
   max-width: 850px;
   width: 100%;
+  box-sizing: border-box;
   min-height: 100vh;
 }
 @media only screen and (max-width: 576px) {
   .about {
-    padding: 0 60px; /* Add padding to the left and right */
+    padding: 0 40px; /* Add padding to the left and right */
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .about {
-    padding: 0 70px; /* Add padding to the left and right */
+    padding: 0 60px; /* Add padding to the left and right */
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -150,6 +151,194 @@ body {
   margin-bottom: 60px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 576px) {
+  .projects {
+    padding: 0 40px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .projects {
+    padding: 0 60px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .projects {
+    padding: 0 100px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .projects {
+    padding: 0 120px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .projects {
+    padding: 0 140px; /* Add padding to the left and right */
+  }
+}
+.projects__content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.projects__cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 25px 0px;
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100vw;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.projects__cards::-webkit-scrollbar {
+  height: 3px;
+}
+.projects__cards::-webkit-scrollbar-track {
+  background: #edf2f4;
+  border-radius: 14px;
+}
+.projects__cards::-webkit-scrollbar-thumb {
+  background: #6e85b7;
+  border-radius: 14px;
+}
+.projects__cards::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+@media only screen and (max-width: 576px) {
+  .projects__cards::-webkit-scrollbar {
+    display: none;
+  }
+}
+.projects__card {
+  padding: 20px;
+  transition: all 0.2s;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+@media only screen and (max-width: 576px) {
+  .projects__card {
+    width: 240px;
+    height: 240px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .projects__card {
+    width: 264px;
+    height: 264px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .projects__card {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .projects__card {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .projects__card {
+    width: 300px;
+    height: 300px;
+  }
+}
+.projects__card:first-child {
+  margin-left: 20px;
+}
+.projects__card:last-child {
+  margin-right: 20px;
+}
+.projects__card__title {
+  font-size: 20px;
+}
+.projects__card__text {
+  margin: 20px 0;
+  max-width: 85%;
+  font-size: 14px;
+}
+.projects__card__link-wrapper {
+  margin-top: auto;
+}
+.projects__card__link {
+  text-decoration: none;
+  color: white;
+  background: #6e85b7;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.projects__card__link:hover {
+  border: 1px solid #6e85b7;
+  color: #6e85b7;
+  background: white;
+}
+
+#projectsSection {
+  padding: 0;
+  margin: 0;
+}
+
+#projectsHead {
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-height: 0;
+  margin-top: 0;
+}
+@media only screen and (max-width: 576px) {
+  #projectsHead {
+    padding: 0 40px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  #projectsHead {
+    padding: 0 60px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  #projectsHead {
+    padding: 0 100px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  #projectsHead {
+    padding: 0 120px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 1201px) {
+  #projectsHead {
+    padding: 0 140px; /* Add padding to the left and right */
+  }
+}
+
 .techstacks {
   display: flex;
   flex-direction: column;
@@ -157,16 +346,17 @@ body {
   align-items: stretch;
   max-width: 850px;
   width: 100%;
+  box-sizing: border-box;
   min-height: 100vh;
 }
 @media only screen and (max-width: 576px) {
   .techstacks {
-    padding: 0 60px; /* Add padding to the left and right */
+    padding: 0 40px; /* Add padding to the left and right */
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .techstacks {
-    padding: 0 70px; /* Add padding to the left and right */
+    padding: 0 60px; /* Add padding to the left and right */
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -197,42 +387,7 @@ body {
   font-size: xx-large;
 }
 .techstacks__icon {
-  color: #6e85b7;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: stretch;
-  max-width: 850px;
-  width: 100%;
-  min-height: 100vh;
-}
-@media only screen and (max-width: 576px) {
-  .projects {
-    padding: 0 60px; /* Add padding to the left and right */
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .projects {
-    padding: 0 70px; /* Add padding to the left and right */
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-  .projects {
-    padding: 0 100px; /* Add padding to the left and right */
-  }
-}
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .projects {
-    padding: 0 120px; /* Add padding to the left and right */
-  }
-}
-@media only screen and (min-width: 1201px) {
-  .projects {
-    padding: 0 140px; /* Add padding to the left and right */
-  }
+  color: #f8f7f2;
 }
 
 /************   NOTES    ************
