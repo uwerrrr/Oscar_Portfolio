@@ -30,6 +30,9 @@ body {
 .page-block--inner-shadow {
   box-shadow: inset 0px 20px 20px -20px rgba(0, 0, 0, 0.3);
 }
+.page-block--50vh {
+  min-height: 50vh;
+}
 
 .text-color--main {
   color: #363430;
@@ -55,15 +58,23 @@ body {
 
 .link {
   text-decoration: none;
+  color: #363430;
 }
-.link:hover {
+.link__contact {
   text-decoration: underline #ff8d83;
+}
+.link__contact:hover {
+  background-color: #ff8d83;
   color: #f8f7f2;
-  background-color: rgba(122, 119, 119, 0.9921568627);
 }
 .link__hidden-album {
   background-color: #f8f7f2;
   color: rgba(122, 119, 119, 0.9921568627);
+}
+.link__hidden-album:hover {
+  text-decoration: underline #ff8d83;
+  color: #f8f7f2;
+  background-color: rgba(122, 119, 119, 0.9921568627);
 }
 
 .landing {
@@ -390,7 +401,46 @@ body {
   color: #f8f7f2;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 850px;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 50vh;
+  font-size: larger;
+}
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding: 0 40px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .contact {
+    padding: 0 60px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .contact {
+    padding: 0 100px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .contact {
+    padding: 0 120px; /* Add padding to the left and right */
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .contact {
+    padding: 0 140px; /* Add padding to the left and right */
+  }
+}
 /************   NOTES    ************
+!! need to synchronize height of section block and page block
+
+
 @mixin flex($justify: center) {
   // add parameter $justify to flex() function -> default value is center
   display: flex;

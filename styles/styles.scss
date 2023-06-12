@@ -18,13 +18,13 @@
   justify-content: $justify;
   align-items: $align;
 }
-@mixin sectionBlock {
+@mixin sectionBlock($minHeight: 100vh) {
   max-width: 850px;
   width: 100%;
 
   box-sizing: border-box;
 
-  min-height: 100vh;
+  min-height: $minHeight;
 
   @include mq.phone {
     padding: 0 40px; /* Add padding to the left and right */
@@ -74,6 +74,9 @@ body {
     box-shadow: inset 0px 20px 20px -20px theme.$shadowColor;
     // margin-bottom: 50px;
   }
+  &--50vh {
+    min-height: 50vh;
+  }
 }
 
 .text-color {
@@ -105,16 +108,27 @@ body {
 
 .link {
   text-decoration: none;
-  &:hover {
-    text-decoration: underline theme.$coralPink;
-    // color: theme.$coralPink;
+  color: theme.$jetBlack;
 
-    color: theme.$babyPowder;
-    background-color: theme.$silver;
+  &__contact {
+    // background-color: theme.$vistaBlue;
+    text-decoration: underline theme.$coralPink;
+    &:hover {
+      background-color: theme.$coralPink;
+      color: theme.$babyPowder;
+    }
   }
+
   &__hidden-album {
     background-color: theme.$babyPowder;
     color: theme.$silver;
+    &:hover {
+      text-decoration: underline theme.$coralPink;
+      // color: theme.$coralPink;
+
+      color: theme.$babyPowder;
+      background-color: theme.$silver;
+    }
   }
 }
 
@@ -367,9 +381,17 @@ body {
 // }
 
 .contact {
+  @include flexVertical($align: flex-start);
+  @include sectionBlock($minHeight: 50vh);
+  font-size: larger;
+  &__details {
+  }
 }
 
 /************   NOTES    ************
+!! need to synchronize height of section block and page block
+
+
 @mixin flex($justify: center) {
   // add parameter $justify to flex() function -> default value is center
   display: flex;
