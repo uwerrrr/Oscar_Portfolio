@@ -44,6 +44,25 @@
   }
 }
 
+@mixin paraResize {
+  @include mq.phone {
+    font-size: 16px;
+  }
+  @include mq.tablet {
+    font-size: 17px;
+  }
+  @include mq.landscape-tablet {
+    font-size: 19px;
+  }
+  @include mq.laptop {
+    font-size: 20px;
+  }
+
+  @include mq.desktop {
+    font-size: 20px;
+  }
+}
+
 // classes
 body {
   font-family: "Outfit", sans-serif;
@@ -141,6 +160,7 @@ body {
 
   &__head {
     text-align: left;
+    margin-top: auto;
 
     &__text {
       @extend .text-color--second;
@@ -188,6 +208,7 @@ body {
     margin-bottom: auto;
   }
   &__text {
+    @include paraResize();
     text-align: justify;
     line-height: 2;
     margin-bottom: 60px;
