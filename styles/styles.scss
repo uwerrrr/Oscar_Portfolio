@@ -5,6 +5,7 @@
 @use "./modules/test.scss";
 @use "./modules/theme.scss";
 @use "./modules/media-queries.scss" as mq;
+@use "./modules/tech-stacks.scss" as ts;
 
 // mixins
 @mixin flex($justify: flex-start, $align: stretch) {
@@ -135,6 +136,11 @@ body {
     &:hover {
       background-color: theme.$coralPink;
       color: theme.$babyPowder;
+    }
+    &--icon {
+      &:hover {
+        color: theme.$coralPink;
+      }
     }
   }
 
@@ -289,24 +295,24 @@ body {
 
     @include mq.phone {
       width: calc($cardPhoneWidth * 1);
-      height: calc($cardPhoneHeight * 1);
+      min-height: calc($cardPhoneHeight * 1);
     }
     @include mq.tablet {
       width: calc($cardPhoneWidth * 1.1);
-      height: calc($cardPhoneHeight * 1.1);
+      min-height: calc($cardPhoneHeight * 1.1);
     }
     @include mq.landscape-tablet {
       width: calc($cardPhoneWidth * 1.25);
-      height: calc($cardPhoneHeight * 1.25);
+      min-height: calc($cardPhoneHeight * 1.25);
     }
     @include mq.laptop {
       width: calc($cardPhoneWidth * 1.25);
-      height: calc($cardPhoneHeight * 1.25);
+      min-height: calc($cardPhoneHeight * 1.25);
     }
 
     @include mq.desktop {
       width: calc($cardPhoneWidth * 1.25);
-      height: calc($cardPhoneHeight * 1.25);
+      min-height: calc($cardPhoneHeight * 1.25);
     }
     margin-left: 10px;
     margin-right: 10px;
@@ -327,11 +333,32 @@ body {
     &__text {
       margin: 20px 0;
       max-width: 85%;
-      font-size: 14px;
+      font-size: 16px;
+    }
+    &__tech {
+      border-left: 6px solid;
+      margin-right: 6px;
+      padding-left: 3px;
+      &--html {
+        border-color: theme.$html;
+      }
+      &--js {
+        border-color: theme.$js;
+      }
+      &--scss {
+        border-color: theme.$scss;
+      }
+      &--react {
+        border-color: theme.$react;
+      }
+      &--other {
+        border-color: theme.$otherTech;
+      }
     }
     &__link-wrapper {
       margin-top: auto;
     }
+
     &__link {
       text-decoration: none;
 
@@ -341,6 +368,9 @@ body {
       padding: 6px 12px;
       border-radius: 8px;
       transition: background 0.2s;
+
+      margin: 0 4px;
+
       &:hover {
         border: 1px solid theme.$glaucousBlue;
         color: theme.$glaucousBlue;

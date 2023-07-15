@@ -67,6 +67,9 @@ body {
   background-color: #ff8d83;
   color: #f8f7f2;
 }
+.link__contact--icon:hover {
+  color: #ff8d83;
+}
 .link__hidden-album {
   background-color: #f8f7f2;
   color: rgba(122, 119, 119, 0.9921568627);
@@ -279,31 +282,31 @@ body {
 @media only screen and (max-width: 576px) {
   .projects__card {
     width: 240px;
-    height: 240px;
+    min-height: 240px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   .projects__card {
     width: 264px;
-    height: 264px;
+    min-height: 264px;
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
   .projects__card {
     width: 300px;
-    height: 300px;
+    min-height: 300px;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
   .projects__card {
     width: 300px;
-    height: 300px;
+    min-height: 300px;
   }
 }
 @media only screen and (min-width: 1201px) {
   .projects__card {
     width: 300px;
-    height: 300px;
+    min-height: 300px;
   }
 }
 .projects__card:first-child {
@@ -318,7 +321,27 @@ body {
 .projects__card__text {
   margin: 20px 0;
   max-width: 85%;
-  font-size: 14px;
+  font-size: 16px;
+}
+.projects__card__tech {
+  border-left: 6px solid;
+  margin-right: 6px;
+  padding-left: 3px;
+}
+.projects__card__tech--html {
+  border-color: rgb(205, 84, 51);
+}
+.projects__card__tech--js {
+  border-color: rgb(238, 219, 109);
+}
+.projects__card__tech--scss {
+  border-color: rgb(194, 114, 154);
+}
+.projects__card__tech--react {
+  border-color: rgb(132, 218, 246);
+}
+.projects__card__tech--other {
+  border-color: rgba(122, 119, 119, 0.9921568627);
 }
 .projects__card__link-wrapper {
   margin-top: auto;
@@ -330,6 +353,7 @@ body {
   padding: 6px 12px;
   border-radius: 8px;
   transition: background 0.2s;
+  margin: 0 4px;
 }
 .projects__card__link:hover {
   border: 1px solid #6e85b7;
