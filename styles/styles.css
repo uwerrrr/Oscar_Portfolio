@@ -37,7 +37,8 @@ body {
 .text-color--main {
   color: #363430;
 }
-.text-color--second, .landing__head__text {
+.text-color--second,
+.landing__head__text {
   color: rgba(122, 119, 119, 0.9921568627);
 }
 .text-color--bright {
@@ -340,6 +341,12 @@ body {
 .projects__card__tech--react {
   border-color: rgb(132, 218, 246);
 }
+.projects__card__tech--firestore {
+  border-color: rgb(247, 205, 86);
+}
+.projects__card__tech--java {
+  border-color: rgb(207, 55, 46);
+}
 .projects__card__tech--other {
   border-color: rgba(122, 119, 119, 0.9921568627);
 }
@@ -487,34 +494,3 @@ body {
     padding: 0 140px; /* Add padding to the left and right */
   }
 }
-/************   NOTES    ************
-!! need to synchronize height of section block and page block
-
-
-@mixin flex($justify: center) {
-  // add parameter $justify to flex() function -> default value is center
-  display: flex;
-  justify-content: $justify;
-  align-items: center;
-}
-@mixin flexVerticle($justify: center) {
-  // add parameter $justify to flex() function -> default value is center
-  display: flex;
-  justify-content: $justify;
-  align-items: center;
-}
-
-$danger: red;
-.btn {
-  color: $primary;
-  &--danger {
-    color: $danger;
-  }
-  &__label{
-    ...
-  }
-}
-
-*/
-
-/*# sourceMappingURL=styles.css.map */
