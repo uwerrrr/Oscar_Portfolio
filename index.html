@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
 
     <!-- JavaScripts -->
-    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/scripts.js" defer></script>
     <title>Oscar's Portfolio</title>
   </head>
   <body>
@@ -112,250 +112,323 @@
             My <span class="section-head__title--underline">projects</span>
           </h3>
           <div class="projects__content">
-            <ul class="projects__cards">
-              <li class="projects__card">
-                <div class="projects__card__content">
-                  <h3 class="projects__card__title">fakeOS</h3>
+            <div class="projects-container" id="projectsContainer">
+              <ul class="projects__cards">
+                <li class="projects__card">
+                  <div class="projects__card__content">
+                    <h3 class="projects__card__title">Employee-Creator</h3>
 
-                  <p class="projects__card__text">
-                    Travel back to 1984 with my interactive fake retro Macintosh
-                    OS on web page.
-                    <br />
-                    Demonstrating interactive website creation using only
-                    Javascript and HTML.
-                  </p>
-                  <p>
-                    <span
-                      class="projects__card__tech projects__card__tech--html"
-                      >HTML</span
+                    <p class="projects__card__text">
+                      Dive into seamless employee management with an all-in-one
+                      <u>full-stack</u> web app.
+                    </p>
+                    <p class="projects__card__text">
+                      Easily VIEW, CREATE, EDIT, and DELETE employee
+                      information, all while enjoying built-in data validation
+                      for spot-on accuracy.
+                    </p>
+                  </div>
+                  <div class="projects__card__link-wrapper">
+                    <p>
+                      <span
+                        class="projects__card__tech projects__card__tech--ts"
+                        >TypeScript</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--react"
+                        >React</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--java"
+                        >Java</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--spring"
+                        >SpringBoot</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--other"
+                        >React hook form & Yup</span
+                      >
+                      <!-- <span
+                        class="projects__card__tech projects__card__tech--other"
+                        >PostgreSQL</span
+                      > -->
+                    </p>
+                    <a
+                      href="https://github.com/uwerrrr/employee-creator"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                    <span
-                      class="projects__card__tech projects__card__tech--scss"
-                      >SCSS</span
+                      <!-- <i class="fa-solid fa-code" ></i> -->
+                      &lt;git&gt;
+                    </a>
+                    <a
+                      href="https://oscar-employeecreator.onrender.com/"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                    <span class="projects__card__tech projects__card__tech--js"
-                      >JavaScript</span
-                    >
-                  </p>
-                </div>
-                <div class="projects__card__link-wrapper">
-                  <a
-                    href="https://github.com/uwerrrr/fakeOS"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    <!-- <i class="fa-solid fa-code" ></i> -->
-                    &lt;git&gt;
-                  </a>
-                  <a
-                    href="https://uwerrrr.github.io/fakeOS/"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    <!-- <i class="fa-solid fa-code" ></i> -->
-                    /deploy/
-                  </a>
-                </div>
-              </li>
-              <li class="projects__card">
-                <div class="projects__card__content">
-                  <h3 class="projects__card__title">Google books search</h3>
+                      <!-- <i class="fa-solid fa-code" ></i> -->
+                      /deploy/
+                    </a>
+                  </div>
+                </li>
 
-                  <p class="projects__card__text">
-                    A book search engine using the Google Books API.<br />
-                    Demonstrating React implementation to make an interactive
-                    website, API integration and error handling.
-                  </p>
-                  <p>
-                    <span
-                      class="projects__card__tech projects__card__tech--react"
-                      >React</span
-                    >
-                    <span
-                      class="projects__card__tech projects__card__tech--scss"
-                      >SCSS</span
-                    >
-                    <span class="projects__card__tech projects__card__tech--js"
-                      >JavaScript</span
-                    >
-                  </p>
-                </div>
-                <div class="projects__card__link-wrapper">
-                  <a
-                    href="https://github.com/uwerrrr/Google-Books-Search"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    &lt;git&gt;
-                  </a>
-                  <a
-                    href="https://oscar-booksearch.netlify.app/"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    /deploy/
-                  </a>
-                </div>
-              </li>
+                <li class="projects__card">
+                  <div class="projects__card__content">
+                    <h3 class="projects__card__title">fakeOS</h3>
 
-              <li class="projects__card">
-                <div class="projects__card__content">
-                  <h3 class="projects__card__title">P.aint</h3>
+                    <p class="projects__card__text">
+                      Travel back to 1984 with my interactive fake retro
+                      Macintosh OS on web page.
+                    </p>
+                    <p class="projects__card__text">
+                      Demonstrating interactive website creation using only
+                      Javascript and HTML.
+                    </p>
+                  </div>
+                  <div class="projects__card__link-wrapper">
+                    <p>
+                      <span
+                        class="projects__card__tech projects__card__tech--html"
+                        >HTML</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--scss"
+                        >SCSS</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--js"
+                        >JavaScript</span
+                      >
+                    </p>
+                    <a
+                      href="https://github.com/uwerrrr/fakeOS"
+                      target="_blank"
+                      class="projects__card__link"
+                    >
+                      <!-- <i class="fa-solid fa-code" ></i> -->
+                      &lt;git&gt;
+                    </a>
+                    <a
+                      href="https://uwerrrr.github.io/fakeOS/"
+                      target="_blank"
+                      class="projects__card__link"
+                    >
+                      <!-- <i class="fa-solid fa-code" ></i> -->
+                      /deploy/
+                    </a>
+                  </div>
+                </li>
+                <li class="projects__card">
+                  <div class="projects__card__content">
+                    <h3 class="projects__card__title">Google books search</h3>
 
-                  <p class="projects__card__text">
-                    Easiest way to get yourself a Van Gogh paintings.
-                    <br />
-                    A fake e-commerce Website created using React and Firestore.
-                  </p>
-                  <p>
-                    <span
-                      class="projects__card__tech projects__card__tech--react"
-                      >React</span
+                    <p class="projects__card__text">
+                      A book search engine using the Google Books API.
+                    </p>
+                    <p class="projects__card__text">
+                      Demonstrating React implementation to make an interactive
+                      website, API integration and error handling.
+                    </p>
+                  </div>
+                  <div class="projects__card__link-wrapper">
+                    <p>
+                      <span
+                        class="projects__card__tech projects__card__tech--react"
+                        >React</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--scss"
+                        >SCSS</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--js"
+                        >JavaScript</span
+                      >
+                    </p>
+                    <a
+                      href="https://github.com/uwerrrr/Google-Books-Search"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                    <span
-                      class="projects__card__tech projects__card__tech--scss"
-                      >SCSS</span
+                      &lt;git&gt;
+                    </a>
+                    <a
+                      href="https://oscar-booksearch.netlify.app/"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                    <span class="projects__card__tech projects__card__tech--js"
-                      >JavaScript</span
-                    >
-                    <span
-                      class="projects__card__tech projects__card__tech--firestore"
-                      >Google Firestore</span
-                    >
-                  </p>
-                </div>
-                <div class="projects__card__link-wrapper">
-                  <a
-                    href="https://github.com/uwerrrr/eShop"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    &lt;git&gt;
-                  </a>
-                  <a
-                    href="https://oscar-paintshop.netlify.app/"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    /deploy/
-                  </a>
-                </div>
-              </li>
+                      /deploy/
+                    </a>
+                  </div>
+                </li>
 
-              <li class="projects__card">
-                <div class="projects__card__content">
-                  <h3 class="projects__card__title">Morse Code translator</h3>
+                <li class="projects__card">
+                  <div class="projects__card__content">
+                    <h3 class="projects__card__title">P.aint</h3>
 
-                  <p class="projects__card__text">
-                    A simple translator between Latin characters and Morse code
-                    (both ways). <br />
-                    Demonstrating error handling and writing tests.
-                  </p>
-                  <p>
-                    <span
-                      class="projects__card__tech projects__card__tech--html"
-                      >HTML</span
+                    <p class="projects__card__text">
+                      Easiest way to get yourself a Van Gogh paintings.
+                    </p>
+                    <p class="projects__card__text">
+                      A fake e-commerce Website created using React and
+                      Firestore.
+                    </p>
+                  </div>
+                  <div class="projects__card__link-wrapper">
+                    <p>
+                      <span
+                        class="projects__card__tech projects__card__tech--react"
+                        >React</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--scss"
+                        >SCSS</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--js"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--firestore"
+                        >Google Firestore</span
+                      >
+                    </p>
+                    <a
+                      href="https://github.com/uwerrrr/eShop"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                    <span
-                      class="projects__card__tech projects__card__tech--scss"
-                      >SCSS</span
+                      &lt;git&gt;
+                    </a>
+                    <a
+                      href="https://oscar-paintshop.netlify.app/"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                    <span class="projects__card__tech projects__card__tech--js"
-                      >JavaScript</span
-                    >
-                    <span
-                      class="projects__card__tech projects__card__tech--other"
-                      >TDD</span
-                    >
-                  </p>
-                </div>
-                <div class="projects__card__link-wrapper">
-                  <a
-                    href="https://github.com/uwerrrr/morseCodeTranslator"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    <!-- <i class="fa-solid fa-code" ></i> -->
-                    &lt;git&gt;
-                  </a>
-                  <a
-                    href="https://oscar-morsecode.netlify.app/"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    /deploy/
-                  </a>
-                </div>
-              </li>
+                      /deploy/
+                    </a>
+                  </div>
+                </li>
 
-              <li class="projects__card">
-                <div class="projects__card__content">
-                  <h3 class="projects__card__title">Minesweeper</h3>
+                <li class="projects__card">
+                  <div class="projects__card__content">
+                    <h3 class="projects__card__title">Morse Code translator</h3>
 
-                  <p class="projects__card__text">
-                    A minesweeper game running in CLI.
-                    <br />
-                    Classic but will blow your mind away!
-                    <br />
-                    Built with JAVA.
-                  </p>
-                  <p>
-                    <span
-                      class="projects__card__tech projects__card__tech--java"
-                      >JAVA</span
+                    <p class="projects__card__text">
+                      A simple translator between Latin characters and Morse
+                      code (both ways).
+                    </p>
+                    <p class="projects__card__text">
+                      Demonstrating error handling and writing tests.
+                    </p>
+                  </div>
+                  <div class="projects__card__link-wrapper">
+                    <p>
+                      <span
+                        class="projects__card__tech projects__card__tech--html"
+                        >HTML</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--scss"
+                        >SCSS</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--js"
+                        >JavaScript</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--other"
+                        >TDD</span
+                      >
+                    </p>
+                    <a
+                      href="https://github.com/uwerrrr/morseCodeTranslator"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                  </p>
-                </div>
-                <div class="projects__card__link-wrapper">
-                  <a
-                    href="https://github.com/uwerrrr/minesweeper"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    &lt;git&gt;
-                  </a>
-                </div>
-              </li>
+                      <!-- <i class="fa-solid fa-code" ></i> -->
+                      &lt;git&gt;
+                    </a>
+                    <a
+                      href="https://oscar-morsecode.netlify.app/"
+                      target="_blank"
+                      class="projects__card__link"
+                    >
+                      /deploy/
+                    </a>
+                  </div>
+                </li>
 
-              <li class="projects__card">
-                <div class="projects__card__content">
-                  <h3 class="projects__card__title">Personal Portfolio</h3>
+                <li class="projects__card">
+                  <div class="projects__card__content">
+                    <h3 class="projects__card__title">Minesweeper</h3>
 
-                  <p class="projects__card__text">
-                    A personal website to show off skills, projects and
-                    personality.
-                  </p>
-                  <p>
-                    <span
-                      class="projects__card__tech projects__card__tech--html"
-                      >HTML</span
+                    <p class="projects__card__text">
+                      A minesweeper game running in CLI.
+                    </p>
+                    <p class="projects__card__text">
+                      Classic but will blow your mind away!
+                    </p>
+                    <p class="projects__card__text">Built with JAVA.</p>
+                  </div>
+                  <div class="projects__card__link-wrapper">
+                    <p>
+                      <span
+                        class="projects__card__tech projects__card__tech--java"
+                        >JAVA</span
+                      >
+                    </p>
+                    <a
+                      href="https://github.com/uwerrrr/minesweeper"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                    <span
-                      class="projects__card__tech projects__card__tech--scss"
-                      >SCSS</span
+                      &lt;git&gt;
+                    </a>
+                  </div>
+                </li>
+
+                <li class="projects__card">
+                  <div class="projects__card__content">
+                    <h3 class="projects__card__title">Personal Portfolio</h3>
+
+                    <p class="projects__card__text">
+                      A personal website to show off skills, projects and
+                      personality.
+                    </p>
+                  </div>
+                  <div class="projects__card__link-wrapper">
+                    <p>
+                      <span
+                        class="projects__card__tech projects__card__tech--html"
+                        >HTML</span
+                      >
+                      <span
+                        class="projects__card__tech projects__card__tech--scss"
+                        >SCSS</span
+                      >
+                    </p>
+                    <a
+                      href="https://github.com/uwerrrr/Oscar_Portfolio"
+                      target="_blank"
+                      class="projects__card__link"
                     >
-                  </p>
-                </div>
-                <div class="projects__card__link-wrapper">
-                  <a
-                    href="https://github.com/uwerrrr/Oscar_Portfolio"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    <!-- <i class="fa-solid fa-code" ></i> -->
-                    &lt;git&gt;
-                  </a>
-                  <a
-                    href="https://uwerrrr.github.io/Oscar_Portfolio/"
-                    target="_blank"
-                    class="projects__card__link"
-                  >
-                    /deploy/
-                  </a>
-                </div>
-              </li>
-            </ul>
+                      <!-- <i class="fa-solid fa-code" ></i> -->
+                      &lt;git&gt;
+                    </a>
+                    <a
+                      href="https://uwerrrr.github.io/Oscar_Portfolio/"
+                      target="_blank"
+                      class="projects__card__link"
+                    >
+                      /deploy/
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

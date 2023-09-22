@@ -232,6 +232,10 @@ body {
   align-items: flex-start;
   margin-top: auto;
   margin-bottom: auto;
+  width: 100vw;
+}
+.projects-container {
+  width: 100vw;
 }
 .projects__cards {
   display: flex;
@@ -241,14 +245,16 @@ body {
   list-style: none;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   width: 100vw;
   /* width */
   /* Track */
   /* Handle */
   /* Handle on hover */
 }
+
 .projects__cards::-webkit-scrollbar {
-  height: 3px;
+  height: 15px;
 }
 .projects__cards::-webkit-scrollbar-track {
   background: #edf2f4;
@@ -261,6 +267,7 @@ body {
 .projects__cards::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
 @media only screen and (max-width: 576px) {
   .projects__cards::-webkit-scrollbar {
     display: none;
@@ -279,6 +286,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
+  /* scroll-snap-align: start; */
+  cursor: pointer;
 }
 @media only screen and (max-width: 576px) {
   .projects__card {
@@ -347,6 +356,13 @@ body {
 .projects__card__tech--java {
   border-color: rgb(207, 55, 46);
 }
+.projects__card__tech--spring {
+  border-color: rgba(98, 164, 66);
+}
+.projects__card__tech--ts {
+  border-color: rgba(46, 108, 186);
+}
+
 .projects__card__tech--other {
   border-color: rgba(122, 119, 119, 0.9921568627);
 }
