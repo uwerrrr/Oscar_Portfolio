@@ -237,6 +237,13 @@ body {
 .projects-container {
   width: 100vw;
 }
+.projects-section {
+  padding: 10px 0;
+}
+.projects-section > h4 {
+  text-decoration: overline;
+}
+
 .projects__cards {
   display: flex;
   justify-content: flex-start;
@@ -256,16 +263,25 @@ body {
 .projects__cards::-webkit-scrollbar {
   height: 15px;
 }
-.projects__cards::-webkit-scrollbar-track {
-  background: #edf2f4;
-  border-radius: 14px;
-}
+
 .projects__cards::-webkit-scrollbar-thumb {
   background: #6e85b7;
   border-radius: 14px;
 }
+
 .projects__cards::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.projects__cards::-webkit-scrollbar-track {
+  background: #edf2f4;
+  border-radius: 14px;
+  visibility: collapse;
+}
+
+.projects__cards::-webkit-scrollbar-thumb:hover
+  + .projects__cards::-webkit-scrollbar-track {
+  visibility: visible;
 }
 
 @media only screen and (max-width: 576px) {
