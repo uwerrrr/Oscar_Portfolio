@@ -379,6 +379,22 @@ body {
   border-color: rgba(46, 108, 186);
 }
 
+.projects__card__tech--python {
+  border-color: rgba(244, 215, 99);
+}
+
+.projects__card__tech--sql {
+  border-color: rgba(237, 136, 44);
+}
+
+.projects__card__tech--swift {
+  border-color: rgba(32, 147, 248);
+}
+
+.projects__card__tech--aws {
+  border-color: rgba(252, 144, 42);
+}
+
 .projects__card__tech--other {
   border-color: rgba(122, 119, 119, 0.9921568627);
 }
