@@ -232,10 +232,10 @@ body {
   align-items: flex-start;
   margin-top: auto;
   margin-bottom: auto;
-  width: 100vw;
+  width: 100%;
 }
 .projects-container {
-  width: 100vw;
+  width: 100%;
 }
 .projects-section {
   padding: 10px 0;
@@ -253,7 +253,7 @@ body {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  width: 100vw;
+  width: 100%;
   /* width */
   /* Track */
   /* Handle */
