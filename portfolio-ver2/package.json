@@ -13,6 +13,7 @@
     "react": "^18",
     "react-aria-components": "^1.1.1",
     "react-dom": "^18",
+    "react-icons": "^5.0.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
