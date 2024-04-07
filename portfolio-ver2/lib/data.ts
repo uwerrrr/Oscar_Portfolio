@@ -32,6 +32,14 @@ export const links = [
   },
 ] as const;
 
+// export const Intro = [
+//   {
+//     title:
+//       "Welcome to my portfolio a Full-Stack &lt;/Dev&gt; with a data-driven mindset",
+//   },
+//   { subTitle: "" },
+// ];
+
 // export const experiencesData = [
 //   {
 //     title: "Graduated bootcamp",
