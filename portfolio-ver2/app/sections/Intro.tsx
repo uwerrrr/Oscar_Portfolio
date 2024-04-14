@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import React from "react";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
-    <section className="flex flex-col justify-center items-center ">
+    <section className="flex flex-col justify-center items-center gap-4">
       <MotionDiv
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -18,19 +18,22 @@ const Intro = () => {
         className=""
       >
         <Image
-          src={"/project-imgs/sample_ava.svg"}
+          src={"/project-imgs/sample_ava_2.png"}
           alt={"avatar"}
-          width={200}
-          height={200}
+          width={500}
+          height={500}
           priority={true}
-          className="w-24 h-24 border border-red-600"
+          className="w-64 h-64 border border-red-600 bg-transparent"
         ></Image>
       </MotionDiv>
+
       <article className="text-center">
-        <h1 className="">Hi, I'm Oscar NGUYEN.</h1>
+        <h1 className="text-4xl lg:6xl">
+          Hi, I'm <span className="">Oscar NGUYEN</span>.
+        </h1>
         {/* <p className="">Welcome to my portfolio.</p> */}
-        <p className="">
-          A junior Full-Stack &lt;/Dev&gt; with data science background
+        <p className="mt-5 text-lg">
+          A junior Full-Stack &lt;/Dev&gt; with data science background.
         </p>
       </article>
     </section>
