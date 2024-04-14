@@ -23,11 +23,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} bg-powder text-txt_primary-500 relative`}
+        className={`${poppins.className} bg-test-400 text-txt_primary-500 relative h-[5000px]`}
       >
-        {/* <div className="bg-[#605c5c] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div> */}
-
+        <div className="bg-[#fdcfa1] absolute top-[-3rem] -z-10 right-[-5vw] h-[32rem] w-[48vw] rounded-full  sm:w-[55vw] blur-[5rem] sm:blur-[7rem] md:blur-[10rem] "></div>
+        <div className="bg-[#9bc6ed] absolute top-[-0.5rem] -z-10 left-[-9vw] h-[32rem] w-[70vw] rounded-full  sm:w-[68.75vw] sm:left-[-16vw]  blur-[5rem] sm:blur-[7rem] md:blur-[10rem] "></div>
         <Header />
 
         {children}
