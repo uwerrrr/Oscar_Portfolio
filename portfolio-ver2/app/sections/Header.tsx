@@ -1,5 +1,3 @@
-// "use client";
-import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import { MotionDiv } from "../components/MotionDiv";
@@ -27,7 +25,7 @@ const Header = () => {
                   >
                     {activeSection === link.name ? (
                       <MotionDiv
-                        className=" bg-gray-200 rounded-full py-1.5 px-2 text-txt_primary-800 font-extrabold"
+                        className=" bg-gray-200 rounded-full py-1.5 px-2 text-txt_primary-800 font-medium"
                         layoutId="activeSection"
                         transition={{
                           type: "spring",
