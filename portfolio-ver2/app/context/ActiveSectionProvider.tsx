@@ -2,6 +2,11 @@ import { createContext, useState } from "react";
 import { SectionName } from "@/lib/types";
 
 // ========================================
+// Constants
+// ========================================
+const DEFAULT_SECTION: SectionName = "Home";
+
+// ========================================
 // Context
 // ========================================
 interface ActiveSectionContextProps {
@@ -9,8 +14,10 @@ interface ActiveSectionContextProps {
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
 }
 
-export const ActiveSectionContext =
-  createContext<ActiveSectionContextProps | null>(null);
+export const ActiveSectionContext = createContext<ActiveSectionContextProps>({
+  activeSection: DEFAULT_SECTION,
+  setActiveSection: () => {},
+});
 
 // ========================================
 // Provider
@@ -20,7 +27,8 @@ interface ActiveSectionProviderProps {
 }
 
 const ActiveSectionProvider = ({ children }: ActiveSectionProviderProps) => {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [activeSection, setActiveSection] =
+    useState<SectionName>(DEFAULT_SECTION);
 
   return (
     <ActiveSectionContext.Provider value={{ activeSection, setActiveSection }}>
