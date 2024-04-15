@@ -1,24 +1,35 @@
-import type { Metadata } from "next";
-import { Inter, Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./sections/Header";
 import Providers from "./context/Providers";
 
+// ==================
+// fontawesome
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
+// ==================
+
+// ==================
+// google fonts
+import { Inter, Poppins, Open_Sans } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
 });
-
 const openSans = Open_Sans({ subsets: ["latin"] });
-
 const inter = Inter({ subsets: ["latin"] });
+// ==================
 
+// ==================
+// Metadata
+import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Oscar Nguyen | Personal Portfolio",
   description:
     "Master of Data Science @ Macquarie University | ReactJS Full-stack developer",
 };
+// ==================
 
 export default function RootLayout({
   children,

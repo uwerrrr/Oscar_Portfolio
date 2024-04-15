@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import { MotionDiv } from "../../components/MotionDiv";
-import { motion } from "framer-motion";
-import dataSvg from "@/public/project-imgs/data.svg";
-import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import LinkToSection from "../../components/LinkToSection";
 import Button from "@/app/components/Button";
 
@@ -56,13 +55,26 @@ const Intro = () => {
           delay: 0.1,
         }}
       >
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium">
           <Button className="bg-ucla-500 text-white hover:bg-ucla-800">
             <LinkToSection toSection={"Contact"} label={"Let's talk"} />
           </Button>
           <Button className="">
             <a href="@/public/resume.pdf" download>
               Download CV
+            </a>
+          </Button>
+          <Button className="p-1 text-txt_primary-500 hover:text-[rgb(20,91,181)] bg-transparent border-none text-xl">
+            <a
+              href="https://www.linkedin.com/in/oscar-vannguyen/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+            </a>
+          </Button>
+          <Button className="p-1 text-txt_primary-500 hover:text-[rgb(102,42,140)] bg-transparent border-none text-xl">
+            <a href="https://github.com/uwerrrr" target="_blank">
+              <FontAwesomeIcon icon={faSquareGithub} size="2xl" />
             </a>
           </Button>
         </div>
