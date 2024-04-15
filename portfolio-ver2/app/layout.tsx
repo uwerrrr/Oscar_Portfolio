@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import { Inter, Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./sections/Header";
-import Providers from "./context/providers";
+import Providers from "./context/Providers";
 
-const poppins = Poppins({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+});
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
