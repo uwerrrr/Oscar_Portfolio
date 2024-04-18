@@ -1,4 +1,5 @@
 import SectionDivider from "./components/SectionDivider";
+import About from "./sections/About/About";
 import Intro from "./sections/Intro/Intro";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="flex flex-col items-center px-4">
       <Intro />
       <SectionDivider />
+      <About />
     </main>
   );
 }
