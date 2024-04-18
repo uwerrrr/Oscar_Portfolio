@@ -5,13 +5,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import LinkToSection from "../../components/LinkToSection";
 import Button from "@/app/components/Button";
-import { ActiveSectionContext } from "@/app/context/ActiveSectionProvider";
+import SectionWrapper from "@/app/components/SectionWrapper";
 
 const Intro = () => {
   return (
-    <section
+    <SectionWrapper
+      className="flex flex-col justify-center items-center gap-4 "
       id="home"
-      className="flex flex-col justify-center items-center gap-4  scroll-mt-[100rem]"
     >
       {/* ====== Picture ======*/}
       <MotionDiv
@@ -67,7 +67,7 @@ const Intro = () => {
       >
         <div className="flex flex-col gap-y-3 sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium">
           <Button className="bg-ucla-500 text-white hover:bg-ucla-800">
-            <LinkToSection toSection={"Contact"} label={"Let's talk"} />
+            <LinkToSection toSection={"Contact"}>Let's talk</LinkToSection>
           </Button>
           <Button className="">
             <a href="@/public/resume.pdf" download>
@@ -92,7 +92,7 @@ const Intro = () => {
         </div>
       </MotionDiv>
       {/* ==================== */}
-    </section>
+    </SectionWrapper>
   );
 };
 
