@@ -23,7 +23,7 @@ const LinkToSection = ({
 
   return (
     <Link
-      href={toSection}
+      href={`#${toSection.toLocaleLowerCase()}`}
       className={cn("", className)}
       onClick={() => {
         setActiveSection(toSection);
