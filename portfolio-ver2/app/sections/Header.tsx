@@ -5,15 +5,15 @@ import { MotionDiv } from "../components/MotionDiv";
 const Header = () => {
   const activeSection = links[0].name;
   return (
-    <header className="z-[999] relative h-28 sm:h-36 w-full ">
-      <div className="relative h-full w-full flex items-center justify-center">
+    <header className="z-[999] relative h-28 sm:h-32 w-full ">
+      <div className="relative h-full w-full flex justify-center sm:top-6 ">
         <MotionDiv
           className=" flex justify-center items-center fixed w-full "
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          <nav className="bg-white bg-opacity-75 flex border border-white border-opacity-40 sm:w-3/4 w-full shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] justify-center sm:rounded-full sm:max-w-[500px] h-[3rem]">
-            <ul className="flex sm:justify-around mx-2 gap-2 w-full items-center justify-evenly flex-wrap">
+          <nav className="bg-white bg-opacity-75 flex border border-white border-opacity-40 sm:w-3/4 w-full shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] justify-center sm:rounded-full sm:max-w-[500px] ">
+            <ul className="flex sm:justify-around mx-2 my-[7px] gap-2 w-full items-center justify-evenly flex-wrap ">
               {links.map((link) => (
                 <li
                   key={link.hash}
@@ -25,7 +25,7 @@ const Header = () => {
                   >
                     {activeSection === link.name ? (
                       <MotionDiv
-                        className=" bg-gray-200 rounded-full py-1.5 px-2 text-txt_primary-800 font-medium"
+                        className=" bg-gray-200 rounded-full  sm:px-4 py-1.5 px-[25px] text-txt_primary-800 font-medium  "
                         layoutId="activeSection"
                         transition={{
                           type: "spring",
