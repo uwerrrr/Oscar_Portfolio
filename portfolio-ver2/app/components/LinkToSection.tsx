@@ -3,20 +3,20 @@
 import Link from "next/link";
 import { ActiveSectionContext } from "@/app/context/ActiveSectionProvider";
 import { useContext } from "react";
-import { SectionName } from "@/lib/types";
+import { SectionName, SectionHash } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 interface LinkToSectionProps {
-  // children: React.ReactNode;
+  children: React.ReactNode;
   toSection: SectionName;
-  label: string;
+  // label: string;
   className?: string;
 }
 
 const LinkToSection = ({
-  // children,
+  children,
   toSection,
-  label,
+  // label,
   className,
 }: LinkToSectionProps) => {
   const { setActiveSection } = useContext(ActiveSectionContext);
@@ -29,7 +29,7 @@ const LinkToSection = ({
         setActiveSection(toSection);
       }}
     >
-      {label}
+      {children}
     </Link>
   );
 };
