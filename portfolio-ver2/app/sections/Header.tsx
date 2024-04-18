@@ -1,6 +1,7 @@
 import { links } from "@/lib/data";
 import Link from "next/link";
 import { MotionDiv } from "../components/MotionDiv";
+import LinkToSection from "../components/LinkToSection";
 
 const Header = () => {
   const activeSection = links[0].name;
@@ -19,8 +20,8 @@ const Header = () => {
                   key={link.hash}
                   className=" flex items-center justify-center relative "
                 >
-                  <Link
-                    href={link.hash}
+                  <LinkToSection
+                    toSection={link.name}
                     className="flex w-full items-center justify-center text-txt_second-500 hover:text-gray-950 transition "
                   >
                     {activeSection === link.name ? (
@@ -38,7 +39,7 @@ const Header = () => {
                     ) : (
                       link.name
                     )}
-                  </Link>
+                  </LinkToSection>
                 </li>
               ))}
             </ul>
