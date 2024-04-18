@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} bg-iron-300 text-txt_primary-500 relative h-[5000px]`}
+        className={`${poppins.className} bg-iron-300 text-txt_primary-500 relative min-h-[3000px]`}
       >
         <div className="bg-[#fdcfa1] absolute top-[-12rem] -z-10 right-[-5vw] h-[32rem] w-[52vw] rounded-full  sm:w-[62vw] blur-[5rem] sm:blur-[7rem] md:blur-[10rem] "></div>
         <div className="bg-[#9bc6ed] absolute top-[-6rem] -z-10 left-[-9vw] h-[32rem] w-[70vw] rounded-full  sm:w-[68.75vw] sm:left-[-16vw]  blur-[5rem] sm:blur-[7rem] md:blur-[10rem] "></div>
