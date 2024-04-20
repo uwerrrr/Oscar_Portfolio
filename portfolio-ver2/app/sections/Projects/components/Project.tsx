@@ -56,7 +56,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         {/* ================ */}
 
         {/* ======== img section ======== */}
-        <div className="absolute sm:flex-[1] sm:grow-[1] borderTest sm:relative  top-0 left-0  h-full w-full sm:h-[initial] sm:w-[initial]">
+        <div className="absolute sm:flex-[1] sm:grow-[1]  sm:relative  top-0 left-0  h-full w-full sm:h-[initial] sm:w-[initial]">
           <Image
             src={imageUrl}
             alt="Project I worked on"
