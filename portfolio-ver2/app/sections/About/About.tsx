@@ -6,7 +6,7 @@ import SectionWrapper from "@/app/components/SectionWrapper";
 
 export default function About() {
   return (
-    <SectionWrapper id="about" className="flex flex-col">
+    <SectionWrapper id="about" className="flex flex-col ">
       <MotionDiv
         className="flex-1 flex flex-col   h-full"
         initial={{ opacity: 0, y: 100 }}

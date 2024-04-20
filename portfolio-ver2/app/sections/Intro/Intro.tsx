@@ -6,6 +6,7 @@ import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import LinkToSection from "../../components/LinkToSection";
 import Button from "@/app/components/Button";
 import SectionWrapper from "@/app/components/SectionWrapper";
+import avaImg from "@/public/ava.png";
 
 const Intro = () => {
   return (
@@ -24,7 +25,7 @@ const Intro = () => {
         className=""
       >
         <Image
-          src={"/project-imgs/sample_ava_2.png"}
+          src={avaImg}
           alt={"avatar"}
           width={500}
           height={500}

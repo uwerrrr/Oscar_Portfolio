@@ -23,7 +23,17 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        powder: "#fffef8",
+        powder: {
+          100: "#fffffe",
+          200: "#fffffc",
+          300: "#fffefb",
+          400: "#fffef9",
+          500: "#fffef8",
+          600: "#cccbc6",
+          700: "#999895",
+          800: "#666663",
+          900: "#333332",
+        },
         eggshell: "#efecda",
         uranian: "#a2ceea",
         azul: "#1C6CAE",

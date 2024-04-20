@@ -13,13 +13,14 @@ export const links = [
     name: "About",
     hash: "#about",
   },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
+
   {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
   },
 
   // {
@@ -69,24 +70,27 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    title: "Employee-Creator",
+    description: ` Dive into seamless employee management with an all-in-one full-stack web app. \n Easily VIEW, CREATE, EDIT, and DELETE employee information, all while enjoying built-in data validation for spot-on accuracy.`,
+    tags: [
+      "React",
+      "TypeScript",
+      "Java",
+      "SpringBoot",
+      "React hook form & Yup",
+    ],
     imageUrl: projectImg,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    title: "Text major project",
+    description: `The main task of the this project is to build and compare predictive models which are to predict emotions of tweets. The emotions are "anger", "fear", "sadness" and "joy". \n This project involves NLP, traditional and DNN ML models, Google Colab and Jupyter Notebook.`,
+    tags: ["Python", "ipynb", "NLP", "Machine Learning"],
     imageUrl: projectImg,
   },
   {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    title: "Morse Code translator",
+    description: `A simple translator between Latin characters and Morse code (both ways).\n Demonstrating error handling and writing tests.`,
+    tags: ["HTML", "SCSS", "JavaScript", "TDD"],
     imageUrl: projectImg,
   },
 ] as const;

@@ -19,7 +19,7 @@ export default function SectionWrapper({
   return (
     <section
       className={cn(
-        "scroll-mt-28 max-w-[800px] w-[77vw] min-h-[70vh] max-h-screen ",
+        "scroll-mt-28 max-w-[800px] w-[77vw] min-h-[70vh]  ",
         className,
         {}
       )}
@@ -27,7 +27,6 @@ export default function SectionWrapper({
       ref={ref}
       {...otherProps}
     >
-      
       {children}
     </section>
   );
