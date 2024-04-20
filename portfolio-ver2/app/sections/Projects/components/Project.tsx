@@ -28,11 +28,12 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         className="bg-powder-500 w-full border border-black/5 rounded-lg 
         overflow-hidden sm:min-h-[290px]  hover:bg-gray-200 transition 
         sm:flex
-        p-4
+        p-4 
+        relative
  "
       >
         {/* ======== text section ======== */}
-        <div className=" sm:flex-[2] sm:grow-[2]  sm:group-even:order-1 flex justify-evenly flex-col ">
+        <div className=" sm:flex-[2] sm:grow-[2]  sm:group-even:order-1 flex justify-evenly flex-col z-20 opacity-100 relative">
           <h3 className="text-large font-semibold ">{title}</h3>
           <article className="text-sm py-2 leading-relaxed text-gray-700 dark:text-white/70  grow-[2] flex flex-col gap-3">
             {description.split("\n").map((line, i) => (
@@ -55,21 +56,23 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         {/* ================ */}
 
         {/* ======== img section ======== */}
-        <div className="sm:flex-[1] sm:grow-[1] borderTest sm:relative absolute ">
+        <div className="absolute sm:flex-[1] sm:grow-[1] borderTest sm:relative  top-0 left-0  h-full w-full sm:h-[initial] sm:w-[initial]">
           <Image
             src={imageUrl}
             alt="Project I worked on"
             quality={95}
-            className="relative sm:opacity-100 opacity-[0.5]  rounded shadow-2xl transition -bottom-[14%] w-auto min-h-[95%] h-[200px] 
+            className="relative sm:opacity-100 opacity-[0.2]  rounded shadow-2xl transition -bottom-[14%] w-auto min-h-[95%] h-[200px] 
             
-            -right-[20%] 
+            sm:-right-[20%]
+            -right-[70%] 
             group-hover:scale-[1.04]
             group-hover:-translate-x-[10%]
             group-hover:translate-y-[10%]
             group-hover:-rotate-2
 
             
-            group-even:-left-[20%]
+            sm:group-even:-left-[20%]
+            group-even:-left-[70%]
             group-even:group-hover:translate-x-[10%]
             group-even:group-hover:translate-y-[10%]
             group-even:group-hover:rotate-2
