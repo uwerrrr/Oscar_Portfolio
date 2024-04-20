@@ -72,7 +72,7 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
 
             
             sm:group-even:-left-[20%]
-            group-even:-left-[70%]
+            group-even:-left-[50%]
             group-even:group-hover:translate-x-[10%]
             group-even:group-hover:translate-y-[10%]
             group-even:group-hover:rotate-2
