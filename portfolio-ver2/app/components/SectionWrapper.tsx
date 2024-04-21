@@ -19,7 +19,7 @@ export default function SectionWrapper({
   return (
     <section
       className={cn(
-        "scroll-mt-28 max-w-[800px] w-[77vw] min-h-[70vh]  ",
+        "scroll-mt-28 sm:max-w-[800px]  min-h-[70vh]  ",
         className,
         {}
       )}

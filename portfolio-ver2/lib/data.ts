@@ -71,7 +71,8 @@ export const links = [
 export const projectsData = [
   {
     title: "Employee-Creator",
-    description: ` Dive into seamless employee management with an all-in-one full-stack web app. \n Easily VIEW, CREATE, EDIT, and DELETE employee information, all while enjoying built-in data validation for spot-on accuracy.`,
+    // description: ` Dive into seamless employee management with an all-in-one full-stack web app. \n Easily VIEW, CREATE, EDIT, and DELETE employee information, all while enjoying built-in data validation for spot-on accuracy.`,
+    description: `Effortlessly manage employees: VIEW, CREATE, EDIT, DELETE with built-in validation for accuracy.`,
     tags: [
       "React",
       "TypeScript",
@@ -80,18 +81,25 @@ export const projectsData = [
       "React hook form & Yup",
     ],
     imageUrl: projectImg,
+    githubLink: "https://github.com/uwerrrr",
+    deployLink: "https://github.com/uwerrrr",
   },
   {
     title: "Text major project",
-    description: `The main task of the this project is to build and compare predictive models which are to predict emotions of tweets. The emotions are "anger", "fear", "sadness" and "joy". \n This project involves NLP, traditional and DNN ML models, Google Colab and Jupyter Notebook.`,
+    // description: `The main task of the this project is to build and compare predictive models which are to predict emotions of tweets. The emotions are "anger", "fear", "sadness" and "joy". \n This project involves NLP, traditional and DNN ML models, Google Colab and Jupyter Notebook.`,
+    description: `The main task of the this project is to build and compare predictive models which are to predict `,
     tags: ["Python", "ipynb", "NLP", "Machine Learning"],
     imageUrl: projectImg,
+    githubLink: "https://github.com/uwerrrr",
+    deployLink: "https://github.com/uwerrrr",
   },
   {
     title: "Morse Code translator",
     description: `A simple translator between Latin characters and Morse code (both ways).\n Demonstrating error handling and writing tests.`,
     tags: ["HTML", "SCSS", "JavaScript", "TDD"],
     imageUrl: projectImg,
+    githubLink: "https://github.com/uwerrrr",
+    deployLink: "https://github.com/uwerrrr",
   },
 ] as const;
 

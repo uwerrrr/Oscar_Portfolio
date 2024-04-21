@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <SectionWrapper id="projects" className="flex flex-col ">
       <SectionHeading className="">Projects</SectionHeading>
-      <section className="flex">
+      <section className="flex gap-2">
         <div className="grow-1">menu</div>
         <div className="grow-2 flex flex-col items-center">
           {projectsData.map((project, index) => (
