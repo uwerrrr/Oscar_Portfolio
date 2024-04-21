@@ -37,7 +37,7 @@ const Project = ({
     >
       <section
         className="bg-powder-500 w-full border border-black/5 rounded-lg 
-        overflow-hidden min-h-[173px] sm:min-h-[200px]  group-hover:bg-eggshell transition 
+        overflow-hidden min-h-[200px] sm:min-h-[300px]  group-hover:bg-eggshell transition 
         flex
         p-4 
         relative
@@ -100,7 +100,7 @@ const Project = ({
             className="absolute sm:opacity-100 opacity-[0.17] rounded shadow-2xl transition 
             
             top-[12%] w-auto h-full min-h-[130%] 
-            sm:top-[-4%] sm:h-auto sm:min-w-[130%] 
+            sm:top-[-0%] sm:h-auto sm:min-w-[130%] 
 
             left-[70%]
             group-even:right-[70%]
