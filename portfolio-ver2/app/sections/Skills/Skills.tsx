@@ -7,8 +7,8 @@ import Skill from "./components/Skill";
 const Skills = () => {
   return (
     <SectionWrapper id="skills" className="flex flex-col w-full">
-      <SectionHeading className="text-center">Skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+      <SectionHeading className="text-center ">Skills</SectionHeading>
+      <ul className="flex flex-wrap justify-center gap-8 text-lg text-gray-800 items-center my-auto">
         {skillsData.map((skill, index) => (
           <Skill skill={skill} i={index} key={index} />
         ))}
