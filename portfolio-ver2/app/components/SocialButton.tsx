@@ -17,7 +17,14 @@ const SocialButton = ({ social }: SocialButtonProps) => {
         `hover:text-[${selectedSocial.color}]`
       )}
     >
-      <a href={selectedSocial.url} target="_blank">
+      <a
+        href={
+          social == "email"
+            ? `mailTo:${selectedSocial.url}`
+            : selectedSocial.url
+        }
+        target="_blank"
+      >
         <FontAwesomeIcon icon={selectedSocial.icon} size="2xl" />
       </a>
     </Button>

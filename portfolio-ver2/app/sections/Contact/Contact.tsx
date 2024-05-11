@@ -1,42 +1,36 @@
-import Button from "@/app/components/Button";
 import SectionHeading from "@/app/components/SectionHeading";
 import SectionWrapper from "@/app/components/SectionWrapper";
 import React from "react";
+import ContactForm from "./components/ContactForm";
+import SocialButton from "@/app/components/SocialButton";
+import { socials } from "@/lib/data";
 
 const Contact = () => {
+  const myEmail = socials.email.url;
   return (
     <SectionWrapper id="contact" className="flex flex-col w-full ">
-      <SectionHeading className="text-center ">Contact</SectionHeading>
-      <form
-        action=""
-        className="mx-auto flex flex-col gap-4 w-[min(100%,38rem)]"
-      >
-        <label htmlFor="email" className="sr-only">
-          Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
-          maxLength={500}
-          placeholder="Your email"
-        />
-        <label htmlFor="message" className="sr-only">
-          Message
-        </label>
-        <textarea
-          className="h-52 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="message"
-          id="message"
-          placeholder="Your message"
-          required
-          maxLength={5000}
-        />
-        <Button className="" type="submit">
-          Submit
-        </Button>
-      </form>
+      {/* heading */}
+      <SectionHeading className="text-center mb-3">
+        <span>Contact</span>
+      </SectionHeading>
+      {/* body */}
+      <div className="flex flex-col gap-5">
+        {/* message */}
+        <p className="text-center text-base font-normal normal-case">
+          Please feel free to connect with me via{" "}
+          <a className="underline hover:font-bold" href={`mailto:${myEmail}`}>
+            {myEmail}
+          </a>{" "}
+          or my socials.
+        </p>
+        <div className="flex justify-center gap-5">
+          <SocialButton social={"linkedin"} />
+          <SocialButton social={"github"} />
+        </div>
+
+        {/* form */}
+        <ContactForm />
+      </div>
     </SectionWrapper>
   );
 };
