@@ -3,10 +3,7 @@ import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "@/app/components/Button";
 
-
 const ContactForm = () => {
-
-
   return (
     <form action="" className="mx-auto flex flex-col gap-4 w-[min(100%,38rem)]">
       <label htmlFor="email" className="sr-only">
@@ -16,7 +13,8 @@ const ContactForm = () => {
         type="email"
         name="email"
         id="email"
-        className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all"
+        className="h-14 px-4 rounded-lg borderBlack 
+         transition-all"
         maxLength={500}
         placeholder="Your email"
       />
@@ -24,7 +22,8 @@ const ContactForm = () => {
         Message
       </label>
       <textarea
-        className="h-52 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+        // className="h-52 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+        className="h-52 rounded-lg borderBlack p-4 transition-all dark:outline-none"
         name="message"
         id="message"
         placeholder="Your message"

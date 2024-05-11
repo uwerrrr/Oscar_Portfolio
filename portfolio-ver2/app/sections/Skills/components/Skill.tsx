@@ -24,7 +24,8 @@ const Skill = ({ skill, i }: Props) => {
   return (
     <li className="">
       <MotionDiv
-        className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+        className="bg-white borderBlack rounded-xl px-5 py-3 "
+        // dark:bg-white/10 dark:text-white/80
         variants={fadeInAnimationVariants}
         initial="initial"
         whileInView="animate"

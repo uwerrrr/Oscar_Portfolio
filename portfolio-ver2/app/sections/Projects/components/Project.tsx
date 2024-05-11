@@ -48,7 +48,8 @@ const Project = ({
         <div className=" sm:flex-[2] sm:grow-[2] sm:group-even:order-1 flex justify-evenly flex-col z-20 opacity-100 relative">
           <h3 className="text-large font-semibold ">{title}</h3>
           {/* description */}
-          <article className="text-base py-2 leading-relaxed text-gray-700 dark:text-white/70  grow-[2] flex flex-col gap-3">
+          <article className="text-base py-2 leading-relaxed text-gray-700 grow-[2] flex flex-col gap-3">
+            {/* dark:text-white/70 */}
             {description.split("\n").map((line, i) => (
               <p key={i}>
                 {line} <br />
