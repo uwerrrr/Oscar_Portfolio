@@ -6,9 +6,9 @@ import Skill from "./components/Skill";
 
 const Skills = () => {
   return (
-    <SectionWrapper id="skills" className="flex flex-col w-full">
+    <SectionWrapper id="skills" className="flex flex-col  w-full h-fit">
       <SectionHeading className="text-center ">Skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-8 text-lg text-gray-800 items-center my-auto">
+      <ul className="flex flex-wrap justify-center my-auto gap-8 text-lg text-gray-800 items-center ">
         {skillsData.map((skill, index) => (
           <Skill skill={skill} i={index} key={index} />
         ))}

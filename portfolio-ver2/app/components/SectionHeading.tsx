@@ -14,7 +14,7 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <h2
-      className={cn("text-3xl font-medium capitalize mb-8", className, {})}
+      className={cn("text-3xl font-medium capitalize mb-14", className, {})}
       {...otherProps}
     >
       {children}

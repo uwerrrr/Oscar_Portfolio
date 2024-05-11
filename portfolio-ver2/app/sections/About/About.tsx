@@ -6,16 +6,16 @@ import SectionWrapper from "@/app/components/SectionWrapper";
 
 export default function About() {
   return (
-    <SectionWrapper id="about" className="flex flex-col ">
+    <SectionWrapper id="about" className=" ">
       <MotionDiv
-        className="flex-1 flex flex-col   h-full"
+        className="flex-1 flex flex-col h-full"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
       >
         <SectionHeading className="">About me</SectionHeading>
 
-        <article className="grow text-justify flex flex-col justify-evenly">
+        <article className="grow text-justify text-base flex flex-col justify-evenly gap-10">
           <p className="mb-3">
             [After graduating with a degree in{" "}
             <span className="font-medium">Accounting</span>, I decided to pursue
