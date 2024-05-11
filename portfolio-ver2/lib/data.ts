@@ -3,6 +3,8 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import projectImg from "@/public/project-imgs/sample.png";
+import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const links = [
   {
@@ -124,3 +126,26 @@ export const skillsData = [
   "Django",
   "Framer Motion",
 ] as const;
+
+export const socials = {
+  linkedin: {
+    color: "rgb(20,91,181)",
+    url: "https://www.linkedin.com/in/oscar-vannguyen/",
+    icon: faLinkedin,
+  },
+  github: {
+    color: "rgb(102,42,140)",
+    url: "https://github.com/uwerrrr",
+    icon: faSquareGithub,
+  },
+  email: {
+    // color: "#3179b5",
+    color: "#fb923c",
+    url: "van.lenguyen@outlook.com ",
+    icon: faEnvelope,
+  },
+  // portfolio: {
+  //   color: "#3179b5",
+  //   url: "https://github.com/uwerrrr",
+  // },
+};

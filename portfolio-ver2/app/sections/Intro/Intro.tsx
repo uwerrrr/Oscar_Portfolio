@@ -7,6 +7,7 @@ import LinkToSection from "../../components/LinkToSection";
 import Button from "@/app/components/Button";
 import SectionWrapper from "@/app/components/SectionWrapper";
 import avaImg from "@/public/ava.png";
+import SocialButton from "@/app/components/SocialButton";
 
 const Intro = () => {
   return (
@@ -76,19 +77,9 @@ const Intro = () => {
             </a>
           </Button>
           <div className="flex gap-5  sm:flex-row ">
-            <Button className="p-1 text-txt_primary-500 hover:text-[rgb(20,91,181)] bg-transparent border-none text-xl">
-              <a
-                href="https://www.linkedin.com/in/oscar-vannguyen/"
-                target="_blank"
-              >
-                <FontAwesomeIcon icon={faLinkedin} size="2xl" />
-              </a>
-            </Button>
-            <Button className="p-1 text-txt_primary-500 hover:text-[rgb(102,42,140)] bg-transparent border-none text-xl">
-              <a href="https://github.com/uwerrrr" target="_blank">
-                <FontAwesomeIcon icon={faSquareGithub} size="2xl" />
-              </a>
-            </Button>
+            <SocialButton social={"linkedin"} />
+            <SocialButton social={"github"} />
+            <SocialButton social={"email"} />
           </div>
         </div>
       </MotionDiv>
