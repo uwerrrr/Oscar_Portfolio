@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header from "./sections/Header";
+import Header from "./sections/Header/Header";
 import Providers from "./context/Providers";
 
 // ==================

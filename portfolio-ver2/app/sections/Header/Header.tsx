@@ -1,10 +1,9 @@
 import { links } from "@/lib/data";
-import Link from "next/link";
-import { MotionDiv } from "../components/MotionDiv";
-import LinkToSection from "../components/LinkToSection";
+import { MotionDiv } from "../../components/MotionDiv";
+import LinkToSection from "../../components/LinkToSection";
+import NavLink from "@/app/sections/Header/components/NavLink";
 
 const Header = () => {
-  const activeSection = links[0].name;
   return (
     <header className="z-[999] relative h-28 sm:h-32 w-full ">
       <div className="relative h-full w-full flex justify-center sm:top-6 ">
@@ -24,21 +23,7 @@ const Header = () => {
                     toSection={link.name}
                     className="flex w-full items-center justify-center text-txt_second-500 hover:text-gray-950 transition "
                   >
-                    {activeSection === link.name ? (
-                      <MotionDiv
-                        className=" bg-gray-200 rounded-full sm:px-4 py-1.5 sm:py-[3px] px-[25px] text-txt_primary-800 font-medium  "
-                        layoutId="activeSection"
-                        transition={{
-                          type: "spring",
-                          stiffness: 300,
-                          damping: 20,
-                        }}
-                      >
-                        {link.name}
-                      </MotionDiv>
-                    ) : (
-                      link.name
-                    )}
+                    <NavLink sectionName={link.name} />
                   </LinkToSection>
                 </li>
               ))}
