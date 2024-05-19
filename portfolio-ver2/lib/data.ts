@@ -129,18 +129,21 @@ export const skillsData = [
 
 export const socials = {
   linkedin: {
-    color: "rgb(20,91,181)",
+    // color: "#145ab5",
+    color: "linkedin",
     url: "https://www.linkedin.com/in/oscar-vannguyen/",
     icon: faLinkedin,
   },
   github: {
-    color: "rgb(102,42,140)",
+    // color: "#662a8c",
+    color: "github",
     url: "https://github.com/uwerrrr",
     icon: faSquareGithub,
   },
   email: {
     // color: "#3179b5",
-    color: "#fb923c",
+    // color: "#fb923c",
+    color: "email",
     url: "van.lenguyen@outlook.com ",
     icon: faEnvelope,
   },
