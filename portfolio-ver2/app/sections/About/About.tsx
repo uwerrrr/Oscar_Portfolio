@@ -3,10 +3,11 @@ import React from "react";
 import SectionHeading from "@/app/components/SectionHeading";
 import { MotionDiv } from "@/app/components/MotionDiv";
 import SectionWrapper from "@/app/components/SectionWrapper";
+import SectionInView from "@/app/components/SectionInView";
 
 export default function About() {
   return (
-    <SectionWrapper id="about" className=" ">
+    <SectionWrapper id="about" className=" " sectionName="About">
       <MotionDiv
         className="flex-1 flex flex-col h-full"
         initial={{ opacity: 0, y: 100 }}

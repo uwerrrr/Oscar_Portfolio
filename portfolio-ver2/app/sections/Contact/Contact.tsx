@@ -8,7 +8,11 @@ import { socials } from "@/lib/data";
 const Contact = () => {
   const myEmail = socials.email.url;
   return (
-    <SectionWrapper id="contact" className="flex flex-col w-full ">
+    <SectionWrapper
+      id="contact"
+      className="flex flex-col w-full "
+      sectionName={"Contact"}
+    >
       {/* heading */}
       <SectionHeading className="text-center mb-3">
         <span>Contact</span>

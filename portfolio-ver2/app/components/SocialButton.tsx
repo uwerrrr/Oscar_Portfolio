@@ -14,7 +14,7 @@ const SocialButton = ({ social }: SocialButtonProps) => {
     <Button
       className={cn(
         "p-1 text-txt_primary-500 bg-transparent border-none text-xl",
-        `hover:text-[${selectedSocial.color}]`
+        `hover:text-${social}`
       )}
     >
       <a

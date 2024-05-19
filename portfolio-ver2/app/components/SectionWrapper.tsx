@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import React from "react";
+import SectionInView from "./SectionInView";
+import { SectionName } from "@/lib/types";
 
 type SectionWrapperProps = {
   children: React.ReactNode;
@@ -7,6 +9,7 @@ type SectionWrapperProps = {
   id?: string;
   ref?: any;
   otherProps?: React.HTMLAttributes<HTMLElement>;
+  sectionName: SectionName;
 };
 
 export default function SectionWrapper({
@@ -14,6 +17,7 @@ export default function SectionWrapper({
   className,
   id,
   ref,
+  sectionName,
   ...otherProps
 }: SectionWrapperProps) {
   return (
@@ -21,6 +25,7 @@ export default function SectionWrapper({
       className={cn(
         // min-h-[70vh]
         "scroll-mt-28 sm:max-w-[800px] min-h-fit",
+        "relative",
         className,
         {}
       )}
@@ -28,6 +33,7 @@ export default function SectionWrapper({
       ref={ref}
       {...otherProps}
     >
+      <SectionInView sectionName={sectionName} />
       {children}
     </section>
   );
