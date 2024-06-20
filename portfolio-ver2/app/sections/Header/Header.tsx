@@ -1,6 +1,6 @@
 import { links } from "@/lib/data";
 import { MotionDiv } from "../../components/MotionDiv";
-import LinkToSection from "../../components/LinkToSection";
+import LinkToSection from "@/app/components/LinkToSection";
 import NavLink from "@/app/sections/Header/components/NavLink";
 
 const Header = () => {
