@@ -43,7 +43,7 @@ const Intro = () => {
       >
         <article className="text-center text-lg  flex flex-col gap-5">
           <h1 className="text-4xl lg:6xl">
-            Hi, I'm <span className="">Oscar NGUYEN</span>.
+            {`Hi, I'm`} <span className="">Oscar NGUYEN</span>.
           </h1>
           <p className="">Welcome to my portfolio 👋.</p>
           <p className="">
@@ -70,7 +70,7 @@ const Intro = () => {
       >
         <div className="flex flex-col gap-y-3 sm:flex-row items-center justify-center gap-5 px-4 text-lg font-medium">
           <Button className="bg-ucla-500 text-white hover:bg-ucla-800">
-            <LinkToSection toSection={"Contact"}>Let's talk</LinkToSection>
+            <LinkToSection toSection={"Contact"}>{`Let's talk`}</LinkToSection>
           </Button>
           <Button className="">
             <a href="@/public/resume.pdf" download>

@@ -68,7 +68,16 @@ const Project = ({
             ))}
           </ul>
           {/* buttons */}
-          <hr className="bg-powder-400 py-[0.5px] w-full mx-auto group-hover:bg-uranian " />
+          {/* <hr className=" py-[0.5px] w-full mx-auto bg-black" /> */}
+          <div className="relative">
+            <div
+              className="absolute inset-0 flex items-center"
+              aria-hidden="true"
+            >
+              <div className="w-full border-t border-gray-400" />
+            </div>
+          </div>
+
           <div className="flex gap-3 justify-start items-center ">
             <Button className="p-1 text-txt_primary-500 hover:text-[rgb(102,42,140)] bg-transparent border-none">
               <a href={githubLink} target="_blank">
