@@ -2,10 +2,14 @@ import React from "react";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "@/app/components/Button";
+import { sendEmail } from "@/app/actions/sendEmail";
 
 const ContactForm = () => {
   return (
-    <form action="" className="mx-auto flex flex-col gap-4 w-[min(100%,38rem)]">
+    <form
+      action={sendEmail}
+      className="mx-auto flex flex-col gap-4 w-[min(100%,38rem)]"
+    >
       <label htmlFor="email" className="sr-only">
         Email
       </label>
