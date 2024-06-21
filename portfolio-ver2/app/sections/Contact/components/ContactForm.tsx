@@ -5,6 +5,7 @@ import Button from "@/app/components/Button";
 import { sendEmail } from "@/app/actions/sendEmail";
 
 const ContactForm = () => {
+  let a;
   return (
     <form
       action={sendEmail}
