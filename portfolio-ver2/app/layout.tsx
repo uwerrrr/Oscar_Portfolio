@@ -29,6 +29,14 @@ export const metadata: Metadata = {
   title: "Oscar Nguyen | Personal Portfolio",
   description:
     "Master of Data Science @ Macquarie University | ReactJS Full-stack developer",
+  authors: { name: "Oscar Nguyen", url: "https://github.com/uwerrrr" },
+  openGraph: {
+    title: "Oscar Nguyen | Personal Portfolio",
+    description:
+      "Master of Data Science @ Macquarie University | ReactJS Full-stack developer",
+    emails: "van.lenguyen@outlook.com",
+    url: "https://github.com/uwerrrr",
+  },
 };
 // ==================
 
