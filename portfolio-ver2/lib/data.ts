@@ -2,9 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import projectImg from "@/public/project-imgs/sample.png";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
+import sampleImg from "@/public/project-imgs/sample.png";
+import morseImg from "@/public/project-imgs/morse_code.png";
+import employeeCreatorImg from "@/public/project-imgs/employee_creator.jpeg";
+import textProjectImg from "@/public/project-imgs/text_major.png";
 
 export const links = [
   {
@@ -73,7 +77,6 @@ export const links = [
 export const projectsData = [
   {
     title: "Employee-Creator",
-    // description: ` Dive into seamless employee management with an all-in-one full-stack web app. \n Easily VIEW, CREATE, EDIT, and DELETE employee information, all while enjoying built-in data validation for spot-on accuracy.`,
     description: `Effortlessly manage employees: VIEW, CREATE, EDIT, DELETE with built-in validation for accuracy.`,
     tags: [
       "React",
@@ -82,26 +85,29 @@ export const projectsData = [
       "SpringBoot",
       "React hook form & Yup",
     ],
-    imageUrl: projectImg,
-    githubLink: "https://github.com/uwerrrr",
-    deployLink: "https://github.com/uwerrrr",
+    imageUrl: employeeCreatorImg,
+    githubLink: "https://github.com/uwerrrr/employee-creator",
+    deployLink: "https://oscar-employeecreator.onrender.com",
+    type: ["Full-stack", "Front-end"],
   },
   {
     title: "Text major project",
-    // description: `The main task of the this project is to build and compare predictive models which are to predict emotions of tweets. The emotions are "anger", "fear", "sadness" and "joy". \n This project involves NLP, traditional and DNN ML models, Google Colab and Jupyter Notebook.`,
     description: `The main task of the this project is to build and compare predictive models which are to predict `,
     tags: ["Python", "ipynb", "NLP", "Machine Learning"],
-    imageUrl: projectImg,
-    githubLink: "https://github.com/uwerrrr",
-    deployLink: "https://github.com/uwerrrr",
+    imageUrl: textProjectImg,
+    githubLink: "https://github.com/uwerrrr/text_major_project",
+    deployLink:
+      "https://colab.research.google.com/drive/1N9Iy4mfvcwihaAXFYW5lri77VR2bipM7#scrollTo=Pwq6jYZIrGgU",
+    type: ["Data"],
   },
   {
     title: "Morse Code translator",
     description: `A simple translator between Latin characters and Morse code (both ways).\n Demonstrating error handling and writing tests.`,
     tags: ["HTML", "SCSS", "JavaScript", "TDD"],
-    imageUrl: projectImg,
-    githubLink: "https://github.com/uwerrrr",
-    deployLink: "https://github.com/uwerrrr",
+    imageUrl: morseImg,
+    githubLink: "https://github.com/uwerrrr/morseCodeTranslator",
+    deployLink: "https://oscar-morsecode.netlify.app/",
+    type: ["Front-end"],
   },
 ] as const;
 
