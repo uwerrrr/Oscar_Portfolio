@@ -5,6 +5,14 @@ import { projectsData } from "@/lib/data";
 import Project from "./components/Project";
 
 const Projects = () => {
+  const projectTypes = projectsData.reduce(
+    (acc, curr) => {
+      acc = Array.from(new Set([...acc, ...curr.type]));
+      return acc;
+    },
+    ["All"] as string[]
+  );
+
   return (
     <SectionWrapper
       id="projects"
@@ -12,14 +20,18 @@ const Projects = () => {
       sectionName={"Projects"}
     >
       <SectionHeading className="">Projects</SectionHeading>
-      <section className="flex gap-2">
-        <div className="grow-1">menu</div>
-        <div className="grow-2 flex flex-col items-center">
-          {projectsData.map((project, index) => (
-            <Project {...project} key={index} />
+      {/* <div className="mb-3">
+        <ul className="flex flex-wrap gap-2">
+          {projectTypes.map((type) => (
+            <li key={type} className="">{type}</li>
           ))}
-        </div>
-      </section>
+        </ul>
+      </div> */}
+      <div className=" flex flex-col items-center">
+        {projectsData.map((project, index) => (
+          <Project {...project} key={index} />
+        ))}
+      </div>
     </SectionWrapper>
   );
 };
