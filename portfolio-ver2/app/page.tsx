@@ -8,8 +8,12 @@ import Skills from "./sections/Skills/Skills";
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
+      <div className="h-[90vh] flex flex-col justify-center">
+        <Intro />
+        <div className="flex flex-col items-center justify-center ">
+          <SectionDivider />
+        </div>
+      </div>
       <About />
       <SectionDivider />
       <Projects />

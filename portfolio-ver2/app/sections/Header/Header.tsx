@@ -5,7 +5,7 @@ import NavLink from "@/app/sections/Header/components/NavLink";
 
 const Header = () => {
   return (
-    <header className="z-[999] relative h-28 sm:h-32 w-full ">
+    <header className="z-[999] relative h-28 sm:h-32 w-full">
       <div className="relative h-full w-full flex justify-center sm:top-6 ">
         <MotionDiv
           className=" flex justify-center items-center fixed w-full "
