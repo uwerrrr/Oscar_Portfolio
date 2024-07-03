@@ -1,6 +1,7 @@
 "use client";
 
-import ActiveSectionProvider from "./ActiveSectionProvider";
+import SelectedProjectTypeProvider from "@/app/context/SelectedProjectTypeProvider";
+import ActiveSectionProvider from "@/app/context/ActiveSectionProvider";
 
 interface ProvidersProps {
   children: React.ReactNode;
@@ -9,7 +10,11 @@ interface ProvidersProps {
 const Providers = ({ children }: ProvidersProps) => {
   return (
     <>
-      <ActiveSectionProvider>{children}</ActiveSectionProvider>
+      <ActiveSectionProvider>
+        <SelectedProjectTypeProvider>
+          {children}
+        </SelectedProjectTypeProvider>
+      </ActiveSectionProvider>
     </>
   );
 };

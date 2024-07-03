@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ActiveSectionContext } from "@/app/context/ActiveSectionProvider";
 import { useContext } from "react";
-import { SectionName, SectionHash } from "@/lib/types";
+import { SectionName } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 interface LinkToSectionProps {

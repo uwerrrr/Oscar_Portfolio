@@ -3,16 +3,10 @@ import SectionHeading from "@/app/components/SectionHeading";
 import SectionWrapper from "@/app/components/SectionWrapper";
 import { projectsData } from "@/lib/data";
 import Project from "./components/Project";
+import ProjectList from "@/app/sections/Projects/components/ProjectList";
+import FilterButtonWrapper from "@/app/sections/Projects/components/FilterButtonWrapper";
 
 const Projects = () => {
-  const projectTypes = projectsData.reduce(
-    (acc, curr) => {
-      acc = Array.from(new Set([...acc, ...curr.type]));
-      return acc;
-    },
-    ["All"] as string[]
-  );
-
   return (
     <SectionWrapper
       id="projects"
@@ -27,6 +21,8 @@ const Projects = () => {
           ))}
         </ul>
       </div> */}
+      <FilterButtonWrapper />
+      <ProjectList />
       <div className=" flex flex-col items-center">
         {projectsData.map((project, index) => (
           <Project {...project} key={index} />
