@@ -88,7 +88,7 @@ export const projectsData = [
     imageUrl: employeeCreatorImg,
     githubLink: "https://github.com/uwerrrr/employee-creator",
     deployLink: "https://oscar-employeecreator.onrender.com",
-    type: ["Full-stack", "Front-end"],
+    types: ["Full-stack", "Front-end"],
   },
   {
     title: "Text major project",
@@ -98,7 +98,7 @@ export const projectsData = [
     githubLink: "https://github.com/uwerrrr/text_major_project",
     deployLink:
       "https://colab.research.google.com/drive/1N9Iy4mfvcwihaAXFYW5lri77VR2bipM7#scrollTo=Pwq6jYZIrGgU",
-    type: ["Data"],
+    types: ["Data"],
   },
   {
     title: "Morse Code translator",
@@ -107,7 +107,7 @@ export const projectsData = [
     imageUrl: morseImg,
     githubLink: "https://github.com/uwerrrr/morseCodeTranslator",
     deployLink: "https://oscar-morsecode.netlify.app/",
-    type: ["Front-end"],
+    types: ["Front-end"],
   },
 ] as const;
 

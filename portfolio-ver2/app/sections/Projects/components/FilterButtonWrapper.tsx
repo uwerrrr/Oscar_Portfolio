@@ -6,7 +6,7 @@ import { ProjectType } from "@/lib/types";
 const FilterButtonWrapper = () => {
   const projectTypes: ProjectType[] = [
     "All",
-    ...Array.from(new Set(projectsData.flatMap((project) => project.type))),
+    ...Array.from(new Set(projectsData.flatMap((project) => project.types))),
   ];
 
   return (

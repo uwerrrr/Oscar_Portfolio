@@ -14,20 +14,10 @@ const Projects = () => {
       sectionName={"Projects"}
     >
       <SectionHeading className="">Projects</SectionHeading>
-      {/* <div className="mb-3">
-        <ul className="flex flex-wrap gap-2">
-          {projectTypes.map((type) => (
-            <li key={type} className="">{type}</li>
-          ))}
-        </ul>
-      </div> */}
+
       <FilterButtonWrapper />
       <ProjectList />
-      <div className=" flex flex-col items-center">
-        {projectsData.map((project, index) => (
-          <Project {...project} key={index} />
-        ))}
-      </div>
+      
     </SectionWrapper>
   );
 };

@@ -14,7 +14,6 @@ const SectionInView = ({ sectionName }: InViewProps) => {
   const isInView = useInView(ref);
   const { setActiveSection } = useContext(ActiveSectionContext);
   useEffect(() => {
-    console.log(sectionName, " is in view: ", isInView);
     if (isInView) {
       setActiveSection(sectionName);
     }
