@@ -1,19 +1,11 @@
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import SectionHeading from "@/app/components/SectionHeading";
 import SectionWrapper from "@/app/components/SectionWrapper";
-import { experiencesData } from "@/lib/data";
+import ExperienceList from "@/app/sections/Experience/components/ExperienceList";
 
 const Experience = () => {
-
-
   return (
     <SectionWrapper
-      id="contact"
+      id="experience"
       className="flex flex-col w-full "
       sectionName={"Experience"}
     >
@@ -22,7 +14,8 @@ const Experience = () => {
         <span>Experience</span>
       </SectionHeading>
       {/* body */}
-      <VerticalTimeline lineColor=""></VerticalTimeline>
+
+      <ExperienceList />
     </SectionWrapper>
   );
 };
