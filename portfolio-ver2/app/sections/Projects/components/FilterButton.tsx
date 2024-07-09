@@ -21,7 +21,7 @@ const FilterButton = ({ buttonProjectType }: FilterButtonProps) => {
       className={`h-7 w-fit px-4
         ${
           selectedType === buttonProjectType
-            ? "bg-ucla-300 font-semibold"
+            ? "bg-ucla-300 font-base"
             : "bg-gray-200 text-gray-800 hover:bg-gray-300"
         }
       `}

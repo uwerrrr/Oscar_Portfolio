@@ -12,8 +12,8 @@ const Header = () => {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          <nav className="bg-white bg-opacity-75 flex border border-white border-opacity-40 sm:w-3/4 w-full shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] justify-center sm:rounded-full sm:max-w-[500px] ">
-            <ul className="flex sm:justify-around mx-2 my-[7px] sm:my-[4px] gap-2 w-full items-center justify-evenly flex-wrap ">
+          <nav className="bg-white bg-opacity-75 flex border border-white border-opacity-40 sm:w-3/4 w-full shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] justify-center sm:rounded-full sm:max-w-[600px] ">
+            <ul className="flex sm:justify-around mx-2 my-[7px] sm:my-[4px] gap-4 w-full items-center justify-evenly flex-wrap ">
               {links.map((link) => (
                 <li
                   key={link.hash}
