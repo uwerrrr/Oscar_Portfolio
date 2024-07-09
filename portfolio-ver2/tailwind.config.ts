@@ -91,10 +91,7 @@ const config: Config = {
           700: "#7c8286",
           800: "#525759",
           900: "#292b2d",
-        },
-        linkedin: "#145ab5",
-        github: "#662a8c",
-        email: "#fb923c",
+        }
       },
     },
   },

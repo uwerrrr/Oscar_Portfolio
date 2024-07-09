@@ -4,6 +4,7 @@ import Contact from "./sections/Contact/Contact";
 import Intro from "./sections/Intro/Intro";
 import Projects from "./sections/Projects/Projects";
 import Skills from "./sections/Skills/Skills";
+import Experience from "./sections/Experience/Experience";
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         </div>
       </div>
       <About />
+      <SectionDivider />
+      <Experience />
       <SectionDivider />
       <Projects />
       <SectionDivider />
