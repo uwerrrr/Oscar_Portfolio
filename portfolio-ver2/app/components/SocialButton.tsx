@@ -10,12 +10,24 @@ interface SocialButtonProps {
 
 const SocialButton = ({ social }: SocialButtonProps) => {
   const selectedSocial = socials[`${social}`];
+
+  let hoverColor: string;
+  switch (social) {
+    case "linkedin":
+      hoverColor = "hover:text-[#145ab5]";
+      break;
+    case "github":
+      hoverColor = "hover:text-[#662a8c]";
+      break;
+    default:
+      hoverColor = "hover:text-[#fb923c]";
+      break;
+  }
+
+  // const hoverColor = `hover:text-blue-500`;
   return (
     <Button
-      className={cn(
-        "p-1 text-txt_primary-500 bg-transparent border-none text-xl",
-        `hover:text-${social}`
-      )}
+      className={cn("p-1  bg-transparent border-none text-xl", hoverColor)}
     >
       <a
         href={

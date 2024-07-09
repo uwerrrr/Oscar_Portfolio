@@ -25,6 +25,7 @@ const inter = Inter({ subsets: ["latin"] });
 // Metadata
 import type { Metadata } from "next";
 import Footer from "./sections/Footer";
+
 export const metadata: Metadata = {
   title: "Oscar Nguyen | Personal Portfolio",
   description:
@@ -39,6 +40,7 @@ export const metadata: Metadata = {
   },
 };
 // ==================
+
 
 export default function RootLayout({
   children,
