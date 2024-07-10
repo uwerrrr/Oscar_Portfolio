@@ -5,8 +5,6 @@ import Project from "@/app/sections/Projects/components/Project";
 import { projectsData } from "@/lib/data";
 import { SelectedProjectTypeContext } from "@/app/context/SelectedProjectTypeProvider";
 import { ProjectProps } from "@/lib/types";
-import { ProjectType } from "@/lib/types";
-
 
 const ProjectList = () => {
   const { selectedType } = useContext(SelectedProjectTypeContext);

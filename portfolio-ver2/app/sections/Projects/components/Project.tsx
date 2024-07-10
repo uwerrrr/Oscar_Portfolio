@@ -9,6 +9,8 @@ import Button from "@/app/components/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+import DescriptionList from "@/app/components/DescriptionList";
+import SocialButton from "@/app/components/SocialButton";
 
 const Project = ({
   title,
@@ -33,11 +35,13 @@ const Project = ({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0 w-full "
+      className="group mb-3 sm:mb-8 last:mb-0 w-full"
     >
       <section
-        className="bg-powder-500 w-full border border-black/5 rounded-lg 
-        overflow-hidden min-h-[200px] sm:min-h-[300px]  group-hover:bg-eggshell transition 
+        className="bg-gray-100 w-full border border-black/5 rounded-lg 
+        overflow-hidden min-h-[200px] sm:min-h-[300px]  
+        group-hover:bg-gray-200 
+        transition 
         flex
         p-4 
         relative
@@ -50,26 +54,23 @@ const Project = ({
           {/* description */}
           <article className="text-base py-2 leading-relaxed text-gray-700 grow-[2] flex flex-col gap-3">
             {/* dark:text-white/70 */}
-            {description.split("\n").map((line, i) => (
-              <p key={i}>
-                {line} <br />
-              </p>
-            ))}
+            <DescriptionList description={description} isBullet={false} />
           </article>
+
           {/* tech tags */}
           <ul className=" flex flex-wrap my-1 gap-2 items-center">
             {tags.map((tag, index) => (
               <li
-                className=" bg-black/[0.7] px-[10px] py-[1.5px] text-[0.7rem] uppercase tracking-wider text-white rounded-full "
+                className=" bg-gray-500 px-[10px] py-[1.5px] text-[0.7rem] uppercase tracking-wider text-white rounded-full "
                 key={index}
               >
                 {tag}
               </li>
             ))}
           </ul>
-          {/* buttons */}
-          {/* <hr className=" py-[0.5px] w-full mx-auto bg-black" /> */}
-          <div className="relative">
+
+          {/* divider */}
+          <div className="relative my-1">
             <div
               className="absolute inset-0 flex items-center"
               aria-hidden="true"
@@ -78,25 +79,27 @@ const Project = ({
             </div>
           </div>
 
-          <div className="flex gap-3 justify-start items-center ">
-            <Button className="p-1 text-txt_primary-500 hover:text-[rgb(102,42,140)] bg-transparent border-none">
-              <a href={githubLink} target="_blank">
-                <FontAwesomeIcon
-                  icon={faSquareGithub}
-                  size="2xl"
-                  className="max-h-[33px] p-0"
-                />
-              </a>
-            </Button>
-            <Button className="p-1 text-txt_primary-500 hover:text-azul bg-transparent border-none">
-              <a href={deployLink} target="_blank">
-                <FontAwesomeIcon
-                  icon={faCirclePlay}
-                  size="2xl"
-                  className="max-h-[33px] p-0"
-                />
-              </a>
-            </Button>
+          {/* buttons */}
+
+          <div className="flex gap-3 justify-start items-center  p-0">
+            {githubLink && (
+              <Button className="p-0 m-0 text-gray-700  bg-transparent border-none  ">
+                <a href={githubLink} target="_blank">
+                  <FontAwesomeIcon
+                    icon={faSquareGithub}
+                    size="2xl"
+                    className="max-h-[33px] p-0 hover:text-[#662a8c]"
+                  />
+                </a>
+              </Button>
+            )}
+            {deployLink && (
+              <Button className="hover:bg-azul bg-gray-700 text-white p-1 my-1 max-h-[33px] ">
+                <a href={deployLink} target="_blank">
+                  {`View live`}
+                </a>
+              </Button>
+            )}
           </div>
         </div>
         {/* ================ */}

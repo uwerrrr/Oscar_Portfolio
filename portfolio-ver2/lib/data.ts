@@ -13,6 +13,12 @@ import RMITUniLogo from "@/public/edu-logo/RMITUniLogo.png";
 import morseImg from "@/public/project-imgs/morse_code.png";
 import employeeCreatorImg from "@/public/project-imgs/employee_creator.jpeg";
 import textProjectImg from "@/public/project-imgs/text_major.png";
+import mysqlAnalyticsImg from "@/public/project-imgs/mysql_analytics.png";
+import googleBooksImg from "@/public/project-imgs/google_books.png";
+import awsDataProcessingImg from "@/public/project-imgs/aws_data_processing.png";
+import minesweeperImg from "@/public/project-imgs/minesweeper.png";
+import fakeOsImg from "@/public/project-imgs/fake_os.png";
+import goloImg from "@/public/project-imgs/golo_crm.png";
 
 export const links = [
   // {
@@ -117,6 +123,26 @@ end-users, to capture and prioritize 10+ functional and non-functional requireme
 
 export const projectsData = [
   {
+    title: "Golo CRM",
+    description: `Golo CRM is a full-stack CRM application built with NextJS. Collaborated with GeniusIT team to build key features such as document database, document management dashboard and landing page`,
+    tags: ["NextJS", "TypeScript", "Vercel", "Turso", "drizzle"],
+    imageUrl: goloImg,
+    githubLink: "",
+    deployLink: "https://golocrm.com",
+    types: ["Full-stack", "Client"],
+  },
+
+  {
+    title: "Text major project",
+    description: `The main task of the this project is to build and compare predictive models which are to predict `,
+    tags: ["Python", "ipynb", "NLP", "Machine Learning"],
+    imageUrl: textProjectImg,
+    githubLink: "https://github.com/uwerrrr/text_major_project",
+    deployLink:
+      "https://colab.research.google.com/drive/1N9Iy4mfvcwihaAXFYW5lri77VR2bipM7#scrollTo=Pwq6jYZIrGgU",
+    types: ["Data"],
+  },
+  {
     title: "Employee-Creator",
     description: `Effortlessly manage employees: VIEW, CREATE, EDIT, DELETE with built-in validation for accuracy.`,
     tags: [
@@ -132,18 +158,8 @@ export const projectsData = [
     types: ["Full-stack", "Front-end"],
   },
   {
-    title: "Text major project",
-    description: `The main task of the this project is to build and compare predictive models which are to predict `,
-    tags: ["Python", "ipynb", "NLP", "Machine Learning"],
-    imageUrl: textProjectImg,
-    githubLink: "https://github.com/uwerrrr/text_major_project",
-    deployLink:
-      "https://colab.research.google.com/drive/1N9Iy4mfvcwihaAXFYW5lri77VR2bipM7#scrollTo=Pwq6jYZIrGgU",
-    types: ["Data"],
-  },
-  {
     title: "Morse Code translator",
-    description: `A simple translator between Latin characters and Morse code (both ways).\n Demonstrating error handling and writing tests.`,
+    description: `A simple translator between Latin characters and Morse code (both ways). Demonstrating error handling and writing tests.`,
     tags: ["HTML", "SCSS", "JavaScript", "TDD"],
     imageUrl: morseImg,
     githubLink: "https://github.com/uwerrrr/morseCodeTranslator",
@@ -152,10 +168,10 @@ export const projectsData = [
   },
   {
     title: "Google books search",
-    description: `A book search engine using the Google Books API.\n 
+    description: `A book search engine using the Google Books API. 
     Demonstrating React implementation to make an interactive website, API integration and error handling.`,
     tags: ["React", "SCSS", "JavaScript", "API"],
-    imageUrl: morseImg,
+    imageUrl: googleBooksImg,
     githubLink: "https://github.com/uwerrrr/Google-Books-Search",
     deployLink: "https://oscar-booksearch.netlify.app/",
     types: ["Front-end"],
@@ -164,18 +180,38 @@ export const projectsData = [
     title: "mySQL analytics",
     description: `This project aims to create a compact MySQL database using an open-source dataset and then leverage Python to perform data analysis and insights.`,
     tags: ["SQL", "mySQL", "Database Normalization"],
-    imageUrl: morseImg,
+    imageUrl: mysqlAnalyticsImg,
     githubLink: "https://github.com/uwerrrr/mySQL-analytics",
+    deployLink: "",
     types: ["Data"],
   },
   {
     title: "Tiny AWS Lambda Data Processing Project",
-    description: `This project demonstrates a minimal data processing pipeline implemented on AWS Lambda using the Titanic: Machine Learning from Disaster dataset.\n
+    description: `This project demonstrates a minimal data processing pipeline implemented on AWS Lambda using the Titanic: Machine Learning from Disaster dataset.
     The pipeline is designed to run a data processing function daily to handle the dataset stored in an S3 bucket.`,
     tags: ["AWS S3", "AWS Lambda"],
-    imageUrl: morseImg,
+    imageUrl: awsDataProcessingImg,
     githubLink: "https://github.com/uwerrrr/aws_titanic",
+    deployLink: "",
     types: ["Data"],
+  },
+  {
+    title: "Minesweeper",
+    description: `A minesweeper game running in CLI. Classic but will blow your mind away! Built with JAVA.`,
+    tags: ["Java"],
+    imageUrl: minesweeperImg,
+    githubLink: "https://github.com/uwerrrr/minesweeper",
+    deployLink: "",
+    types: ["Back-end"],
+  },
+  {
+    title: "fakeOS",
+    description: `Travel back to 1984 with my interactive fake retro Macintosh OS on web page. Demonstrating interactive website creation using only Javascript and HTML.`,
+    tags: ["HTML, SCSS, JavaScript"],
+    imageUrl: fakeOsImg,
+    githubLink: "https://github.com/uwerrrr/fakeOS",
+    deployLink: "https://uwerrrr.github.io/fakeOS/",
+    types: ["Back-end"],
   },
 ] as const;
 
