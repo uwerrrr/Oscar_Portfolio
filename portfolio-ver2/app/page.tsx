@@ -9,8 +9,8 @@ import Education from "./sections/Education/Education";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <div className="h-[90vh] flex flex-col justify-center ">
+    <main className="flex flex-col items-center ">
+      <div className="min-h-[90vh] flex flex-col justify-center top-5 ">
         <div className="justify-center items-center flex flex-[3]">
           <Intro />
         </div>

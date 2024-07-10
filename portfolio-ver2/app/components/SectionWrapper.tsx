@@ -23,8 +23,7 @@ export default function SectionWrapper({
   return (
     <section
       className={cn(
-        // min-h-[70vh]
-        "scroll-mt-28 sm:max-w-[800px] min-h-fit",
+        "scroll-mt-28 sm:max-w-[800px] min-h-fit px-3 sm:px-10 mx-auto",
         "relative",
         className,
         {}
