@@ -21,10 +21,10 @@ import fakeOsImg from "@/public/project-imgs/fake_os.png";
 import goloImg from "@/public/project-imgs/golo_crm.png";
 
 export const links = [
-  // {
-  //   name: "Home",
-  //   hash: "#home",
-  // },
+  {
+    name: "Home",
+    hash: "#home",
+  },
   {
     name: "About",
     hash: "#about",
