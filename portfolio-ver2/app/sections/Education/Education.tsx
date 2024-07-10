@@ -1,23 +1,24 @@
+import React from "react";
 import SectionHeading from "@/app/components/SectionHeading";
 import SectionWrapper from "@/app/components/SectionWrapper";
-import ExperienceList from "@/app/sections/Experience/components/ExperienceList";
+import EduTimeline from "@/app/sections/Education/components/EduTimeline";
 
-const Experience = () => {
+const Education = () => {
   return (
     <SectionWrapper
-      id="experience"
+      id="education"
       className="flex flex-col w-full mb-8"
-      sectionName={"Experience"}
+      sectionName={"Education"}
     >
       {/* heading */}
       <SectionHeading className="text-center mb-3">
-        <span>Experience</span>
+        <span>Education</span>
       </SectionHeading>
 
       {/* body */}
-      <ExperienceList />
+      <EduTimeline />
     </SectionWrapper>
   );
 };
 
-export default Experience;
+export default Education;

@@ -7,9 +7,9 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
-import ExperienceDesc from "@/app/sections/Experience/components/ExperienceDesc";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import DescriptionList from "@/app/components/DescriptionList";
 
 const ExperienceList = () => {
   const theme = "light";
@@ -27,7 +27,7 @@ const ExperienceList = () => {
                 theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
               boxShadow: "none",
               border: "1px solid rgba(0, 0, 0, 0.05)",
-             
+
               padding: "1.3rem 2rem",
             }}
             // contentArrowStyle={{
@@ -51,7 +51,7 @@ const ExperienceList = () => {
               {experienceItem.location}
             </p>
             <div className="!mt-1 !font-normal text-gray-800 text-sm">
-              <ExperienceDesc desc={experienceItem.description} />
+              <DescriptionList description={experienceItem.description} />
             </div>
           </VerticalTimelineElement>
         </React.Fragment>

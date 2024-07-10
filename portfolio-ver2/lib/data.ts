@@ -1,23 +1,24 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
-import sampleImg from "@/public/project-imgs/sample.png";
+import MacquarieUniLogo from "@/public/edu-logo/MacquarieUniLogo.png";
+import RMITUniLogo from "@/public/edu-logo/RMITUniLogo.png";
+
 import morseImg from "@/public/project-imgs/morse_code.png";
 import employeeCreatorImg from "@/public/project-imgs/employee_creator.jpeg";
 import textProjectImg from "@/public/project-imgs/text_major.png";
 
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
+  // {
+  //   name: "Home",
+  //   hash: "#home",
+  // },
   {
     name: "About",
     hash: "#about",
@@ -35,11 +36,37 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Education",
+    hash: "#education",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
 ] as const;
 
+export const eduData = [
+  {
+    place: "Macquarie University",
+    degree: "Master of Data Science",
+    logo: MacquarieUniLogo,
+    date: "2019 - 2021",
+    description: `Weighted Average Mark: 82 (Distinction).
+    Awarded Letter of Commendation for High Distinction in Machine Learning, Mining Unstructured Data, Applications
+of Data Science and Enterprise Application Integration courses.
+    Awarded 1st winner of AI-Enabled Banking Hackathon 2020 organising by Big Data Society, Department of
+Computing. 
+    Macquarie University ASEAN Scholarship.`,
+  },
+  {
+    place: "RMIT University",
+    degree: "Bachelor of Business Information System",
+    logo: RMITUniLogo,
+    date: "2013 - 2018",
+    description: `High Distinction grades in Developing Mobility Solutions and Information Systems Development.
+    Vice President of RMIT Business Information System Club, leading the sponsorship team in an academic competition that attracted 50 participants from 5 major universities.`,
+  },
+];
 
 export const experiencesData = [
   {
@@ -122,6 +149,33 @@ export const projectsData = [
     githubLink: "https://github.com/uwerrrr/morseCodeTranslator",
     deployLink: "https://oscar-morsecode.netlify.app/",
     types: ["Front-end"],
+  },
+  {
+    title: "Google books search",
+    description: `A book search engine using the Google Books API.\n 
+    Demonstrating React implementation to make an interactive website, API integration and error handling.`,
+    tags: ["React", "SCSS", "JavaScript", "API"],
+    imageUrl: morseImg,
+    githubLink: "https://github.com/uwerrrr/Google-Books-Search",
+    deployLink: "https://oscar-booksearch.netlify.app/",
+    types: ["Front-end"],
+  },
+  {
+    title: "mySQL analytics",
+    description: `This project aims to create a compact MySQL database using an open-source dataset and then leverage Python to perform data analysis and insights.`,
+    tags: ["SQL", "mySQL", "Database Normalization"],
+    imageUrl: morseImg,
+    githubLink: "https://github.com/uwerrrr/mySQL-analytics",
+    types: ["Data"],
+  },
+  {
+    title: "Tiny AWS Lambda Data Processing Project",
+    description: `This project demonstrates a minimal data processing pipeline implemented on AWS Lambda using the Titanic: Machine Learning from Disaster dataset.\n
+    The pipeline is designed to run a data processing function daily to handle the dataset stored in an S3 bucket.`,
+    tags: ["AWS S3", "AWS Lambda"],
+    imageUrl: morseImg,
+    githubLink: "https://github.com/uwerrrr/aws_titanic",
+    types: ["Data"],
   },
 ] as const;
 
