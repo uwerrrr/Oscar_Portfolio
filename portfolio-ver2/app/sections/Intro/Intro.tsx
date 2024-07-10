@@ -12,7 +12,7 @@ import SocialButton from "@/app/components/SocialButton";
 const Intro = () => {
   return (
     <SectionWrapper
-      className="flex flex-col justify-center items-center gap-4 "
+      className={`flex flex-col justify-center items-center gap-4  `}
       id="home"
       sectionName={"Home"}
     >
@@ -73,7 +73,7 @@ const Intro = () => {
             <LinkToSection toSection={"Contact"}>{`Let's talk`}</LinkToSection>
           </Button>
           <Button className="">
-            <a href="@/public/resume.pdf" download>
+            <a href="/OscarNguyen_Resume.pdf" download="OscarNguyen_Resume.pdf">
               Download CV
             </a>
           </Button>

@@ -10,9 +10,11 @@ import Education from "./sections/Education/Education";
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
-      <div className="h-[90vh] flex flex-col justify-center">
-        <Intro />
-        <div className="flex flex-col items-center justify-center ">
+      <div className="h-[90vh] flex flex-col justify-center ">
+        <div className="justify-center items-center flex flex-[3]">
+          <Intro />
+        </div>
+        <div className="flex flex-col items-center justify-center flex-[1] ">
           <SectionDivider />
         </div>
       </div>
