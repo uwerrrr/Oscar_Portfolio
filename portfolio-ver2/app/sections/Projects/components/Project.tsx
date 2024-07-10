@@ -94,7 +94,7 @@ const Project = ({
               </Button>
             )}
             {deployLink && (
-              <Button className="hover:bg-azul bg-gray-700 text-white p-1 my-1 max-h-[33px] ">
+              <Button className="hover:bg-azul bg-gray-700 text-white px-[10px] py-[1.5px] my-1 max-h-[33px] ">
                 <a href={deployLink} target="_blank">
                   {`View live`}
                 </a>
