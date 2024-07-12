@@ -51,7 +51,10 @@ const ExperienceList = () => {
               {experienceItem.location}
             </p>
             <div className="!mt-1 !font-normal text-gray-800 text-sm">
-              <DescriptionList description={experienceItem.description} />
+              <DescriptionList
+                description={experienceItem.description}
+                isJustify={true}
+              />
             </div>
           </VerticalTimelineElement>
         </React.Fragment>

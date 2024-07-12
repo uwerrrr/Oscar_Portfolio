@@ -37,7 +37,7 @@ const EduTimeline = () => {
             <h3 className="font-semibold capitalize">{edu.degree}</h3>
             <p className="font-normal !mt-0">{edu.place}</p>
             <div className="!mt-1 !font-normal text-gray-800 text-sm">
-              <DescriptionList description={edu.description} />
+              <DescriptionList description={edu.description} isJustify={true} />
             </div>
           </VerticalTimelineElement>
         </React.Fragment>
