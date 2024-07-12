@@ -1,15 +1,19 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { StaticImageData } from "next/image";
+import { ProjectType, ProjectTypeWithAll } from "@/lib/types";
+
+// Icons
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faMicroscope } from "@fortawesome/free-solid-svg-icons";
 
+// Education images
 import MacquarieUniLogo from "@/public/edu-logo/MacquarieUniLogo.png";
 import RMITUniLogo from "@/public/edu-logo/RMITUniLogo.png";
 
+// Project images
 import morseImg from "@/public/project-imgs/morse_code.png";
 import employeeCreatorImg from "@/public/project-imgs/employee_creator.jpeg";
 import textProjectImg from "@/public/project-imgs/text_major.png";
@@ -19,6 +23,7 @@ import awsDataProcessingImg from "@/public/project-imgs/aws_data_processing.png"
 import minesweeperImg from "@/public/project-imgs/minesweeper.png";
 import fakeOsImg from "@/public/project-imgs/fake_os.png";
 import goloImg from "@/public/project-imgs/golo_crm.png";
+import portfolioImg from "@/public/project-imgs/portfolio.png";
 
 export const links = [
   {
@@ -98,7 +103,7 @@ internal Confluence platform.
 Contributed to a team of 5 in Scrum Agile environment to create a new app UX demo.
 Worked closely with a senior data scientist to boost the accuracy of Truuth MVP1 liveness fusion model, which was
 based on Mediapipe solution, from 65% to 75%.`,
-    icon: faBriefcase,
+    icon: faMicroscope,
     date: "Feb 2021 - Jun 2021",
   },
   {
@@ -116,12 +121,24 @@ metrics application using NestJS and Typescript. Enhanced CI/CD pipeline with Pl
 NextJS, TypeScript, TailwindCSS, Drizzle ORM, Turso database and Stripe, ensuring robust functionality and
 adherence to best practices. Conducted comprehensive requirement gathering sessions with key stakeholders, including product managers and
 end-users, to capture and prioritize 10+ functional and non-functional requirements for a web project. Design system process flow with UML flowcharts to visualize complex processes, enabling cross-team alignment.`,
-    icon: faBriefcase,
+    icon: faLaptopCode,
     date: "Mar 2024 - Jun 2024",
   },
 ] as const;
 
-export const projectsData = [
+export interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+  githubLink: string;
+  deployLink: string;
+  types: ProjectType[];
+}
+
+export const DEFAULT_PROJECT_TYPE: ProjectTypeWithAll = "Feature";
+
+export const projectsData: Project[] = [
   {
     title: "Golo CRM",
     description: `Golo CRM is a full-stack CRM application built with NextJS. Collaborated with GeniusIT team to build key features such as document database, document management dashboard and landing page`,
@@ -129,7 +146,7 @@ export const projectsData = [
     imageUrl: goloImg,
     githubLink: "",
     deployLink: "https://golocrm.com",
-    types: ["Full-stack", "Client"],
+    types: ["Full-stack", "Client", "Feature"],
   },
 
   {
@@ -140,7 +157,7 @@ export const projectsData = [
     githubLink: "https://github.com/uwerrrr/text_major_project",
     deployLink:
       "https://colab.research.google.com/drive/1N9Iy4mfvcwihaAXFYW5lri77VR2bipM7#scrollTo=Pwq6jYZIrGgU",
-    types: ["Data"],
+    types: ["Data", "Feature"],
   },
   {
     title: "Employee-Creator",
@@ -155,7 +172,7 @@ export const projectsData = [
     imageUrl: employeeCreatorImg,
     githubLink: "https://github.com/uwerrrr/employee-creator",
     deployLink: "https://oscar-employeecreator.onrender.com",
-    types: ["Full-stack", "Front-end"],
+    types: ["Full-stack", "Front-end", "Feature"],
   },
   {
     title: "Morse Code translator",
@@ -212,6 +229,22 @@ export const projectsData = [
     githubLink: "https://github.com/uwerrrr/fakeOS",
     deployLink: "https://uwerrrr.github.io/fakeOS/",
     types: ["Back-end"],
+  },
+  {
+    title: "Personal portfolio website",
+    description: `Within this portfolio, you will gain insights into my background, skills, and experiences. Additionally, you will have the opportunity to explore the projects I have completed. Should you wish to get in touch, please feel free to contact me via email or LinkedIn.`,
+    tags: [
+      "NextJS",
+      "Typescript",
+      "Tailwind",
+      "Resend API",
+      "Framer Motion",
+      "Vercel",
+    ],
+    imageUrl: portfolioImg,
+    githubLink: "https://github.com/uwerrrr/Oscar_Portfolio",
+    deployLink: "https://oscar-nguyen.vercel.app/",
+    types: ["Front-end", "Feature"],
   },
 ] as const;
 

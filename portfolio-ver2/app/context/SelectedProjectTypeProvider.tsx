@@ -1,22 +1,18 @@
 import { createContext, useState } from "react";
-import { ProjectType } from "@/lib/types";
-
-// ========================================
-// Constants
-// ========================================
-const DEFAULT_TYPE: ProjectType = "All";
+import { ProjectTypeWithAll } from "@/lib/types";
+import { DEFAULT_PROJECT_TYPE } from "@/lib/data";
 
 // ========================================
 // Context
 // ========================================
 interface SelectedProjectTypeContextProps {
-  selectedType: ProjectType;
-  setSelectedType: React.Dispatch<React.SetStateAction<ProjectType>>;
+  selectedType: ProjectTypeWithAll;
+  setSelectedType: React.Dispatch<React.SetStateAction<ProjectTypeWithAll>>;
 }
 
 export const SelectedProjectTypeContext =
   createContext<SelectedProjectTypeContextProps>({
-    selectedType: DEFAULT_TYPE,
+    selectedType: DEFAULT_PROJECT_TYPE,
     setSelectedType: () => {},
   });
 
@@ -30,7 +26,8 @@ interface SelectedProjectTypeProviderProps {
 const SelectedProjectTypeProvider = ({
   children,
 }: SelectedProjectTypeProviderProps) => {
-  const [selectedType, setSelectedType] = useState<ProjectType>(DEFAULT_TYPE);
+  const [selectedType, setSelectedType] =
+    useState<ProjectTypeWithAll>(DEFAULT_PROJECT_TYPE);
 
   return (
     <SelectedProjectTypeContext.Provider

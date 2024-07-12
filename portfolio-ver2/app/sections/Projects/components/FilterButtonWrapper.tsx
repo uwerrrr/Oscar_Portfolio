@@ -1,13 +1,17 @@
 import React from "react";
-import { projectsData } from "@/lib/data";
+import { projectsData, DEFAULT_PROJECT_TYPE } from "@/lib/data";
 import FilterButton from "@/app/sections/Projects/components/FilterButton";
-import { ProjectType } from "@/lib/types";
+import { ProjectTypeWithAll } from "@/lib/types";
 
 const FilterButtonWrapper = () => {
-  const projectTypes: ProjectType[] = [
-    "All",
-    ...Array.from(new Set(projectsData.flatMap((project) => project.types))),
-  ];
+  
+  // Array of project types added "All"
+  const projectTypes: ProjectTypeWithAll[] = React.useMemo(() => {
+    const allTypes = projectsData.flatMap((project) =>
+      project.types.filter((type) => type !== DEFAULT_PROJECT_TYPE)
+    );
+    return [DEFAULT_PROJECT_TYPE, ...Array.from(new Set(allTypes)), "All"];
+  }, []);
 
   return (
     <ul className="flex flex-wrap w-full justify-left gap-5 mb-5">

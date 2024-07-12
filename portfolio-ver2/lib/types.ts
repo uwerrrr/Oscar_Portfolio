@@ -7,5 +7,13 @@ export type ProjectProps = (typeof projectsData)[number];
 export type SkillProps = (typeof skillsData)[number];
 export type ExperienceProps = (typeof experiencesData)[number];
 
-export type ProjectType = (typeof projectsData)[number]["types"][number] | "All";
+export type ProjectType =
+  | "Feature"
+  | "Full-stack"
+  | "Client"
+  | "Front-end"
+  | "Data"
+  | "Back-end";
+
+export type ProjectTypeWithAll = ProjectType | "All";
 

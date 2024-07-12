@@ -1,13 +1,13 @@
 "use client";
 
 import React from "react";
-import { ProjectType } from "@/lib/types";
+import { ProjectTypeWithAll } from "@/lib/types";
 import { SelectedProjectTypeContext } from "@/app/context/SelectedProjectTypeProvider";
 import { useContext } from "react";
 import Button from "@/app/components/Button";
 
 interface FilterButtonProps {
-  buttonProjectType: ProjectType;
+  buttonProjectType: ProjectTypeWithAll;
 }
 
 const FilterButton = ({ buttonProjectType }: FilterButtonProps) => {
