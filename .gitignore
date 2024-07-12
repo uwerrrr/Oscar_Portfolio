@@ -1,3 +1,7 @@
 
 .DS_Store
 *.code-workspace
+.temp
+portfolio-ver2/public/project-imgs/data.png
+portfolio-ver2/public/project-imgs/data.svg
+/portfolio-website-master
