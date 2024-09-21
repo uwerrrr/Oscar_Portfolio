@@ -24,7 +24,9 @@ import minesweeperImg from "@/public/project-imgs/minesweeper.png";
 import fakeOsImg from "@/public/project-imgs/fake_os.png";
 import goloImg from "@/public/project-imgs/golo_crm.png";
 import portfolioImg from "@/public/project-imgs/portfolio.png";
+import quizzAppImg from "@/public/project-imgs/quizz_app.png";
 
+// Sections
 export const links = [
   {
     name: "Home",
@@ -56,6 +58,34 @@ export const links = [
   },
 ] as const;
 
+// Social urls
+export const socials = {
+  linkedin: {
+    // color: "#145ab5",
+    // color: "linkedin",
+    url: "https://www.linkedin.com/in/oscar-vannguyen/",
+    icon: faLinkedin,
+  },
+  github: {
+    // color: "#662a8c",
+    // color: "github",
+    url: "https://github.com/uwerrrr",
+    icon: faSquareGithub,
+  },
+  email: {
+    // color: "#3179b5",
+    // color: "#fb923c",
+    // color: "email",
+    url: "van.lenguyen@outlook.com ",
+    icon: faEnvelope,
+  },
+  // portfolio: {
+  //   color: "#3179b5",
+  //   url: "https://github.com/uwerrrr",
+  // },
+};
+
+// Education data
 export const eduData = [
   {
     place: "Macquarie University",
@@ -79,6 +109,7 @@ Computing.
   },
 ];
 
+// Experience data
 export const experiencesData = [
   {
     title: "ERP Application Consultant",
@@ -136,6 +167,31 @@ Design system process flow with UML flowcharts to visualize complex processes, e
   },
 ] as const;
 
+// Skills data
+export const skillsData = [
+  "Machine Learning",
+  "Amazon SageMaker",
+  "Data Analysis",
+  "System Design",
+  "Microsoft PowerBI",
+  "R",
+  "Framer Motion",
+  "Java",
+  "SpringBoot",
+  "Python",
+  "SQL",
+  "CSS",
+  "HTML",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Git",
+  "Tailwind",
+  ".Net",
+] as const;
+
 export interface Project {
   title: string;
   description: string;
@@ -146,8 +202,10 @@ export interface Project {
   types: ProjectType[];
 }
 
+// Default project type
 export const DEFAULT_PROJECT_TYPE: ProjectTypeWithAll = "Feature";
 
+// Projects data
 export const projectsData: Project[] = [
   {
     title: "Golo CRM",
@@ -241,6 +299,17 @@ export const projectsData: Project[] = [
     types: ["Back-end"],
   },
   {
+    title: `Quizz app .Net Project`,
+    description: `This is an online quiz application that can create, manage, and participate in quizzes. This project has been implemented by using .NET Core, Entity Framework, and Razor Pages. 
+    Besides, it maintains an attractive interface that will allow users to take quizzes, keeping track of their results and managing questions.
+    This project is supposed to be hands-on practice for C#, .NET Core, and Entity Framework.`,
+    tags: [".NET", "C#", "Entity Framework", "Razor Pages"],
+    imageUrl: quizzAppImg,
+    githubLink: "https://github.com/uwerrrr/quizzApp",
+    deployLink: "",
+    types: ["Full-stack", "Front-end", "Feature"],
+  },
+  {
     title: "Personal portfolio website",
     description: `Within this portfolio, you will gain insights into my background, skills, and experiences. Additionally, you will have the opportunity to explore the projects I have completed. Should you wish to get in touch, please feel free to contact me via email or LinkedIn.`,
     tags: [
@@ -257,52 +326,3 @@ export const projectsData: Project[] = [
     types: ["Front-end", "Feature"],
   },
 ] as const;
-
-export const skillsData = [
-  "Machine Learning",
-  "Amazon SageMaker",
-  "Data Analysis",
-  "System Design",
-  "Microsoft PowerBI",
-  "R",
-  "Framer Motion",
-  "Java",
-  "SpringBoot",
-  "Python",
-  "SQL",
-  "CSS",
-  "HTML",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-] as const;
-
-export const socials = {
-  linkedin: {
-    // color: "#145ab5",
-    // color: "linkedin",
-    url: "https://www.linkedin.com/in/oscar-vannguyen/",
-    icon: faLinkedin,
-  },
-  github: {
-    // color: "#662a8c",
-    // color: "github",
-    url: "https://github.com/uwerrrr",
-    icon: faSquareGithub,
-  },
-  email: {
-    // color: "#3179b5",
-    // color: "#fb923c",
-    // color: "email",
-    url: "van.lenguyen@outlook.com ",
-    icon: faEnvelope,
-  },
-  // portfolio: {
-  //   color: "#3179b5",
-  //   url: "https://github.com/uwerrrr",
-  // },
-};
