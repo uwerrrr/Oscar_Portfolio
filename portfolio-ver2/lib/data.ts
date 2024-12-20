@@ -25,7 +25,7 @@ import fakeOsImg from "@/public/project-imgs/fake_os.png";
 import goloImg from "@/public/project-imgs/golo_crm.png";
 import portfolioImg from "@/public/project-imgs/portfolio.png";
 import quizzAppImg from "@/public/project-imgs/quizz_app.png";
-import richardLeImg from "@/public/project-imgs/richardle.png";
+import richardLeImg from "@/public/project-imgs/richardle.jpg";
 
 // Sections
 export const links = [
