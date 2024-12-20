@@ -25,6 +25,7 @@ import fakeOsImg from "@/public/project-imgs/fake_os.png";
 import goloImg from "@/public/project-imgs/golo_crm.png";
 import portfolioImg from "@/public/project-imgs/portfolio.png";
 import quizzAppImg from "@/public/project-imgs/quizz_app.png";
+import richardLeImg from "@/public/project-imgs/richardle.png";
 
 // Sections
 export const links = [
@@ -208,6 +209,16 @@ export const DEFAULT_PROJECT_TYPE: ProjectTypeWithAll = "Feature";
 // Projects data
 export const projectsData: Project[] = [
   {
+    title: "Richard Le",
+    description:
+      "Richard Le project is a front-end website built with NextJS. I collaborated with a team of developers and designers to build key features such as landing page, animation, slideshow, SEO optimization and translation.",
+    tags: ["NextJS", "TypeScript"],
+    imageUrl: richardLeImg,
+    githubLink: "",
+    deployLink: "https://www.richardle.com.au/",
+    types: ["Front-end", "Client", "Feature"],
+  },
+  {
     title: "Golo CRM",
     description: `Golo CRM is a full-stack CRM application built with NextJS. Collaborated with GeniusIT team to build key features such as document database, document management dashboard and landing page`,
     tags: ["NextJS", "TypeScript", "Vercel", "Turso", "drizzle"],
@@ -216,7 +227,6 @@ export const projectsData: Project[] = [
     deployLink: "https://golocrm.com",
     types: ["Full-stack", "Client", "Feature"],
   },
-
   {
     title: "Text major project",
     description: `The main task of the this project is to build and compare predictive models which are to predict `,
