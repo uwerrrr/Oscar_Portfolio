@@ -17,7 +17,7 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
   isJustify = false,
 }) => {
   const descriptionSentences = description
-    .split(". ")
+    .split(/(?<!\.NET)\./) // Splits on "." only if not preceded by ".NET"
     .filter((sentence) => sentence.trim() !== "");
 
   return (

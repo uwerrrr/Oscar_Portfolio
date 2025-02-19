@@ -172,6 +172,11 @@ Conducted 2 product pitching using Microsoft PowerBI.`,
 
 // Skills data
 export const skillsData = [
+  ".Net",
+  "React",
+  "TypeScript",
+  "Next.js",
+  "Tailwind",
   "Machine Learning",
   "Amazon SageMaker",
   "Data Analysis",
@@ -186,13 +191,8 @@ export const skillsData = [
   "CSS",
   "HTML",
   "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
-  ".Net",
 ] as const;
 
 export interface Project {
