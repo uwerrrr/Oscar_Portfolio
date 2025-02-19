@@ -23,8 +23,8 @@ const EduTimeline = () => {
               padding: "1.3rem 2rem",
             }}
             visible={true}
-            date={edu.date}
-            dateClassName="!px-2"
+            // date={edu.date}
+            // dateClassName="!px-2"
             icon={
               <Image
                 src={edu.logo}
