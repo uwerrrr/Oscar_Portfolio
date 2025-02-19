@@ -113,22 +113,33 @@ Computing.
 // Experience data
 export const experiencesData = [
   {
-    title: "ERP Application Consultant",
-    location: "Ho Chi Minh City, Vietnam",
-    description: `Worked in a team of 5 to deploy an ERP project for a 2000-store shoe manufacturing corporation in Vietnam,
-including the installation of ERP and database environments on the client’s server.
-Engaged directly with client’s CFO to collect and analyse requirements, proposed ERP processes for the Finance
-module, and developed functional processes in accordance with Vietnamese Accounting Standards.
-Conducted user acceptance testing (UAT) phase, which included 7 end-user training sessions and a detailed 15-
-page user guideline.
-Developed client-tailored solutions, improving operational efficiency by 25% using Excel Macro to overcome system
-limitations.
-Conducted 2 product pitching using Microsoft PowerBI.`,
-    icon: faBriefcase,
-    date: "Feb 2016 - Feb 2017",
+    title: "Full-Stack Software Engineer",
+    company: "Genius IT Solutions",
+    location: "Sydney, NSW",
+    description: `Built an internal web-based system using .NET Core, C#, and SQL Server with RESTful APIs
+    Contributed to the development of a customer relationship management (CRM) Web Application project.
+    Developed a customer relationship management (CRM) Web Application project with NextJS, React, and TypeScript, implementing 3 key features: document management, landing page, and tax settings, along with unit testing.
+    Successfully captured and prioritized 10 functional and non-functional requirements, leading to a 20% increase in project delivery speed.
+    Design system process flow with UML flowcharts to visualize complex processes, enabling cross-team alignment.`,
+    icon: faLaptopCode,
+    date: "Dec 2023 - Jan 2025",
+  },
+  {
+    title: "Full-Stack Software Engineer",
+    company: "Nology",
+    location: "Sydney, NSW",
+    description: `Completed an intensive 12-week training program on full-stack website development.
+Deployed 6 projects using React with Javascript and Typescript, Java and MySQL.
+Coordinated with 2 senior software engineers on backend development for a client project, which involved a student
+metrics application using NestJS and Typescript.
+Enhanced CI/CD pipeline by migrating to Playwright end-to-end testing framework.
+Enriched data viewing requests by implementing 2 new HTTP requests using the MySQL virtual entities method.`,
+    icon: faLaptopCode,
+    date: "May 2023 - Oct 2023",
   },
   {
     title: "Data Scientist",
+    company: "Truuth",
     location: "Sydney, NSW",
     description: `Did migration from Firebase Kit to Mediapipe library to extend Truuth facekey biometrics from 128 to 468 3D face
 coordinates, enhancing the scope of potential facial verification tests.
@@ -142,29 +153,20 @@ TRG International, Ho Chi Minh City, Vietnam`,
     date: "Feb 2021 - Jun 2021",
   },
   {
-    title: "Full-Stack Software Engineer",
-    location: "Sydney, NSW",
-    description: `Completed an intensive 12-week training program on full-stack website development.
-Deployed 6 projects using React with Javascript and Typescript, Java and MySQL.
-Coordinated with 2 senior software engineers on backend development for a client project, which involved a student
-metrics application using NestJS and Typescript.
-Enhanced CI/CD pipeline by migrating to Playwright end-to-end testing framework.
-Enriched data viewing requests by implementing 2 new HTTP requests using the MySQL virtual entities method.`,
-    icon: faLaptopCode,
-    date: "May 2023 - Oct 2023",
-  },
-  {
-    title: "Full-Stack Software Engineer",
-    location: "Sydney, NSW",
-    description: `Contributed to the development of a customer relationship management (CRM) Web Application project.
-Developed 3 pivotal features - document management, landing page and tax settings – along with unit testing
-functions for a full-stack application built with NextJS, TypeScript, ensuring robust functionality and adherence to
-best practices.
-Successfully captured and prioritized 10 functional and non-functional requirements, leading to a 20% increase in
-project delivery speed.
-Design system process flow with UML flowcharts to visualize complex processes, enabling cross-team alignment.`,
-    icon: faLaptopCode,
-    date: "Mar 2024 - Jun 2024",
+    title: "ERP Application Consultant",
+    company: "TRG International",
+    location: "Ho Chi Minh City, Vietnam",
+    description: `Worked in a team of 5 to deploy an ERP project for a 2000-store shoe manufacturing corporation in Vietnam,
+including the installation of ERP and database environments on the client’s server.
+Engaged directly with client’s CFO to collect and analyse requirements, proposed ERP processes for the Finance
+module, and developed functional processes in accordance with Vietnamese Accounting Standards.
+Conducted user acceptance testing (UAT) phase, which included 7 end-user training sessions and a detailed 15-
+page user guideline.
+Developed client-tailored solutions, improving operational efficiency by 25% using Excel Macro to overcome system
+limitations.
+Conducted 2 product pitching using Microsoft PowerBI.`,
+    icon: faBriefcase,
+    date: "Jan 2016 - Jan 2017",
   },
 ] as const;
 
