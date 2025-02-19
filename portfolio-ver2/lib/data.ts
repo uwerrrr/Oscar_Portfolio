@@ -211,6 +211,17 @@ export const DEFAULT_PROJECT_TYPE: ProjectTypeWithAll = "Feature";
 // Projects data
 export const projectsData: Project[] = [
   {
+    title: `Quizz app .Net Project`,
+    description: `This is an online quiz application that can create, manage, and participate in quizzes. This project has been implemented by using .NET Core, Entity Framework, and Razor Pages. 
+    Besides, it maintains an attractive interface that will allow users to take quizzes, keeping track of their results and managing questions.
+    This project is supposed to be hands-on practice for C#, .NET Core, and Entity Framework.`,
+    tags: [".NET", "C#", "Entity Framework", "Razor Pages"],
+    imageUrl: quizzAppImg,
+    githubLink: "https://github.com/uwerrrr/quizzApp",
+    deployLink: "",
+    types: ["Full-stack", "Front-end", "Feature"],
+  },
+  {
     title: "Richard Le",
     description:
       "Richard Le project is a front-end website built with NextJS. I collaborated with a team of developers and designers to build key features such as landing page, animation, slideshow, SEO optimization and translation.",
@@ -310,17 +321,7 @@ export const projectsData: Project[] = [
     deployLink: "https://uwerrrr.github.io/fakeOS/",
     types: ["Back-end"],
   },
-  {
-    title: `Quizz app .Net Project`,
-    description: `This is an online quiz application that can create, manage, and participate in quizzes. This project has been implemented by using .NET Core, Entity Framework, and Razor Pages. 
-    Besides, it maintains an attractive interface that will allow users to take quizzes, keeping track of their results and managing questions.
-    This project is supposed to be hands-on practice for C#, .NET Core, and Entity Framework.`,
-    tags: [".NET", "C#", "Entity Framework", "Razor Pages"],
-    imageUrl: quizzAppImg,
-    githubLink: "https://github.com/uwerrrr/quizzApp",
-    deployLink: "",
-    types: ["Full-stack", "Front-end", "Feature"],
-  },
+
   {
     title: "Personal portfolio website",
     description: `Within this portfolio, you will gain insights into my background, skills, and experiences. Additionally, you will have the opportunity to explore the projects I have completed. Should you wish to get in touch, please feel free to contact me via email or LinkedIn.`,

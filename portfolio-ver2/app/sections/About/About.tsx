@@ -56,7 +56,7 @@ export default function About() {
           <p className="">
             My journey includes studies in Business Information Systems and Data
             Science, plus hands-on roles as an{" "}
-            {["ERP Consultant", "Data Scientist", "Software Engineer"].map(
+            {[ "Full-stack Software Engineer","ERP Consultant", "Data Scientist"].map(
               (role, i, arr) => (
                 <>
                   <HighlightText
@@ -69,7 +69,7 @@ export default function About() {
               )
             )}
             This blend has equipped me with a versatile toolkit: web
-            development, machine learning, data analysis, and business tech
+            development in .Net and React, machine learning, data analysis, and business tech
             planning.
           </p>
           <p>

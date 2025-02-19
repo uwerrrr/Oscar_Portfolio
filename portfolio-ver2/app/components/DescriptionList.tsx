@@ -17,7 +17,7 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
   isJustify = false,
 }) => {
   const descriptionSentences = description
-    .split(".")
+    .split(". ")
     .filter((sentence) => sentence.trim() !== "");
 
   return (

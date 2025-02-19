@@ -47,9 +47,11 @@ const Intro = () => {
           </h1>
           <p className="">Welcome to my portfolio 👋.</p>
           <p className="">
-            A junior{" "}
+            A{" "}
             <span className="font-semibold text-orange-400"> Full-Stack </span>
             &lt;/Dev&gt; with
+            <span className="font-semibold text-orange-400"> .NET </span>
+            and
             <span className="font-semibold text-orange-400">
               {" "}
               data science{" "}
