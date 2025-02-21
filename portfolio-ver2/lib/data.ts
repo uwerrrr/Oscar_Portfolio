@@ -135,7 +135,7 @@ metrics application using NestJS and Typescript.
 Enhanced CI/CD pipeline by migrating to Playwright end-to-end testing framework.
 Enriched data viewing requests by implementing 2 new HTTP requests using the MySQL virtual entities method.`,
     icon: faLaptopCode,
-    date: "May 2023 - Oct 2023",
+    date: "May 2023 - Dec 2023",
   },
   {
     title: "Data Scientist",
