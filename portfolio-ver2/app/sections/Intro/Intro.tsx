@@ -75,7 +75,7 @@ const Intro = () => {
             <LinkToSection toSection={"Contact"}>{`Let's talk`}</LinkToSection>
           </Button>
           <Button className="">
-            <a href="/OscarNguyen_Resume.pdf" download="OscarNguyen_Resume.pdf">
+            <a href="/OscarNguyen.Resume.pdf" download="OscarNguyen.Resume.pdf">
               Download CV
             </a>
           </Button>
