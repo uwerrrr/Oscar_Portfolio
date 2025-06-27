@@ -16,10 +16,18 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
   isBullet = true,
   isJustify = false,
 }) => {
-  const descriptionSentences = description
-    .split(/(?<!\.NET)\./) // Splits on "." only if not preceded by ".NET"
-    .filter((sentence) => sentence.trim() !== "");
 
+  /**
+  * This regular expression splits the string on a period '.' character.
+  * It uses a "negative lookahead" (?!) to ensure the period is NOT immediately followed by 'NET' or 'Net'.
+  */
+  const regex = /\.(?!NET|Net)/;
+
+  const descriptionSentences = description
+    .split(regex)
+    .map(sentence => sentence.trim())
+    .filter(sentence => sentence.length > 0);
+console.log("descriptionSentences: ", descriptionSentences)
   return (
     <ul
       className={`${

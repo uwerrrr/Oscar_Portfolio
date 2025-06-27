@@ -116,11 +116,19 @@ export const experiencesData = [
     title: "Full-Stack Software Engineer",
     company: "Genius IT Solutions",
     location: "Sydney, NSW",
-    description: `Built an internal web-based system using .NET Core, C#, and SQL Server with RESTful APIs
-    Contributed to the development of a customer relationship management (CRM) Web Application project.
-    Developed a customer relationship management (CRM) Web Application project with NextJS, React, and TypeScript, implementing 3 key features: document management, landing page, and tax settings, along with unit testing.
-    Successfully captured and prioritized 10 functional and non-functional requirements, leading to a 20% increase in project delivery speed.
-    Design system process flow with UML flowcharts to visualize complex processes, enabling cross-team alignment.`,
+    description: `Built an internal web-based system using .NET Core, C#, and SQL Server with RESTful APIs.
+Developed key features (document management, landing page, tax settings) and unit tests for a
+full-stack NextJS and TypeScript CRM web application, ensuring robust functionality and adherence
+to best practices.
+Captured and prioritised 10+ functional and non-functional requirements, resulting in a 20%
+improvement in project delivery speed.
+Designed system process flows using UML flowcharts to visualize complex processes, enhancing
+cross-team alignment and understanding.
+Migrated an architectural drawing management application from .Net 5 to .Net 9 by developing
+Disciplines and Buildings functionalities using .NET Web API, Entity Framework Core, Angular, and
+GraphQL, collaborating within a 10-member agile team.
+Proactively identified and resolved 4 critical bugs during the development lifecycle, ensuring
+application stability and minimising impact on end-users.`,
     icon: faLaptopCode,
     date: "Dec 2023 - Jan 2025",
   },
@@ -128,12 +136,13 @@ export const experiencesData = [
     title: "Full-Stack Software Engineer",
     company: "Nology",
     location: "Sydney, NSW",
-    description: `Completed an intensive 12-week training program on full-stack website development.
-Deployed 6 projects using React with Javascript and Typescript, Java and MySQL.
-Coordinated with 2 senior software engineers on backend development for a client project, which involved a student
-metrics application using NestJS and Typescript.
-Enhanced CI/CD pipeline by migrating to Playwright end-to-end testing framework.
-Enriched data viewing requests by implementing 2 new HTTP requests using the MySQL virtual entities method.`,
+    description: `Completed an intensive 12-week full-stack development program, deploying 6 projects using React
+with JavaScript and TypeScript, Java and MySQL.
+Collaborated with senior engineers on backend development for a client project - a student metrics
+application using NestJS and TypeScript.
+Enhanced system functionality by improving the CI/CD pipeline through migration to Playwright for
+end-to-end testing and implementing 2 new HTTP requests for enriched data viewing requests using
+MySQL virtual entities.`,
     icon: faLaptopCode,
     date: "May 2023 - Dec 2023",
   },
