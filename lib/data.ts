@@ -150,14 +150,14 @@ MySQL virtual entities.`,
     title: "Data Scientist",
     company: "Truuth",
     location: "Sydney, NSW",
-    description: `Did migration from Firebase Kit to Mediapipe library to extend Truuth facekey biometrics from 128 to 468 3D face
-coordinates, enhancing the scope of potential facial verification tests.
-Compiled 4 comprehensive documents outlining current implementations and potential future developments on
-internal Confluence platform.
-Contributed to a team of 5 in Scrum Agile environment to create a new app UX demo.
-Worked closely with a senior data scientist to increase the accuracy of Truuth MVP1 liveness fusion model from
-65% to 75%, improving overall system reliability.
-TRG International, Ho Chi Minh City, Vietnam`,
+    description: `Improved the accuracy of the Truuth MVP1 liveness fusion model from 65% to 75%, significantly
+enhancing overall system reliability, in collaboration with a senior data scientist. Leveraged Python
+for model development and evaluation.
+Migrated from Firebase Kit to Mediapipe library to extend Truuth facekey biometrics from 128 to
+468 3D face coordinates, enhancing the scope of potential facial verification tests. This involved
+significant data manipulation and analysis using Python.
+Developed documentation outlining implementations and future developments on Confluence.
+Contributed to UX demo development within a Scrum Agile team.`,
     icon: faMicroscope,
     date: "Feb 2021 - Jun 2021",
   },
