@@ -18,10 +18,12 @@ const DescriptionList: React.FC<DescriptionListProps> = ({
 }) => {
 
   /**
-  * This regular expression splits the string on a period '.' character.
-  * It uses a "negative lookahead" (?!) to ensure the period is NOT immediately followed by 'NET' or 'Net'.
-  */
-  const regex = /\.(?!NET|Net)/;
+   * This regular expression splits a string on a period '.' character.
+   * It uses a case-insensitive negative lookahead (?!) to ensure the period
+   * is NOT immediately followed by 'net' or 'js', thus preserving keywords
+   * like '.NET', 'Next.js', 'node.js', etc.
+   */
+  const regex = /\.(?!net|js)/i;
 
   const descriptionSentences = description
     .split(regex)

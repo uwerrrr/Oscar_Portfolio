@@ -26,6 +26,8 @@ import goloImg from "@/public/project-imgs/golo_crm.png";
 import portfolioImg from "@/public/project-imgs/portfolio.png";
 import quizzAppImg from "@/public/project-imgs/quizz_app.png";
 import richardLeImg from "@/public/project-imgs/richardle.jpg";
+import fizzBuzzLightYearImg from "@/public/project-imgs/fizz_buzz_light_year.png";
+
 
 // Sections
 export const links = [
@@ -116,19 +118,14 @@ export const experiencesData = [
     title: "Full-Stack Software Engineer",
     company: "Genius IT Solutions",
     location: "Sydney, NSW",
-    description: `Built an internal web-based system using .NET Core, C#, and SQL Server with RESTful APIs.
-Developed key features (document management, landing page, tax settings) and unit tests for a
-full-stack NextJS and TypeScript CRM web application, ensuring robust functionality and adherence
-to best practices.
-Captured and prioritised 10+ functional and non-functional requirements, resulting in a 20%
-improvement in project delivery speed.
-Designed system process flows using UML flowcharts to visualize complex processes, enhancing
-cross-team alignment and understanding.
-Migrated an architectural drawing management application from .Net 5 to .Net 9 by developing
-Disciplines and Buildings functionalities using .NET Web API, Entity Framework Core, Angular, and
-GraphQL, collaborating within a 10-member agile team.
-Proactively identified and resolved 4 critical bugs during the development lifecycle, ensuring
-application stability and minimising impact on end-users.`,
+    description: `Migrated an architectural drawing management application from .NET 5 to .NET 9 within a 10-member agile team.
+Developed 'Disciplines' and 'Buildings' modules for the migrated application using ASP.NET Core Web API, Entity Framework Core, Angular, and GraphQL.
+Developed a full-stack CRM application using Next.js and TypeScript, delivering 3 key features including document management, a new landing page, and tax settings functionality.
+Authored over 8 unit tests for the CRM application to ensure robust functionality and adherence to best practices.
+Built an internal web-based system using .NET Core, C#, and SQL Server with RESTful APIs.
+Captured and prioritised 10+ functional and non-functional requirements, resulting in a 20% improvement in project delivery speed.
+Designed system process flows using UML flowcharts to visualize complex processes, enhancing cross-team alignment and understanding.
+`,
     icon: faLaptopCode,
     date: "Dec 2023 - Jan 2025",
   },
@@ -220,11 +217,20 @@ export const DEFAULT_PROJECT_TYPE: ProjectTypeWithAll = "Feature";
 // Projects data
 export const projectsData: Project[] = [
   {
+    title: "FizzBuzzLightYear",
+    description: "An online gaming application that allows users to create, manage, and play custom FizzBuzz-like games. Players can define their own divisibility rules, play timed sessions with randomly generated numbers, and track their scores based on correct and incorrect answers. The application features a Next.js and TypeScript front-end, with an ASP.NET 8 Web API backend and a lightweight SQLite database, all packaged for easy deployment using Docker.",
+    tags: [".NET", "Next.js", "TypeScript", "Entity Framework Core", "SQLite", "Docker"],
+    imageUrl: fizzBuzzLightYearImg,
+    githubLink: "https://github.com/uwerrrr/FizzBuzzLightYear",
+    deployLink: "",
+    types: ["Full-stack", "Feature"],
+  },
+  {
     title: `Quizz app .Net Project`,
     description: `This is an online quiz application that can create, manage, and participate in quizzes. This project has been implemented by using .NET Core, Entity Framework, and Razor Pages. 
     Besides, it maintains an attractive interface that will allow users to take quizzes, keeping track of their results and managing questions.
     This project is supposed to be hands-on practice for C#, .NET Core, and Entity Framework.`,
-    tags: [".NET", "C#", "Entity Framework", "Razor Pages"],
+    tags: [".NET", "C#", "Entity Framework Core", "Razor Pages"],
     imageUrl: quizzAppImg,
     githubLink: "https://github.com/uwerrrr/quizzApp",
     deployLink: "",
@@ -233,8 +239,8 @@ export const projectsData: Project[] = [
   {
     title: "Richard Le",
     description:
-      "Richard Le project is a front-end website built with NextJS. I collaborated with a team of developers and designers to build key features such as landing page, animation, slideshow, SEO optimization and translation.",
-    tags: ["NextJS", "TypeScript"],
+      "Richard Le project is a front-end website built with Next.js. I collaborated with a team of developers and designers to build key features such as landing page, animation, slideshow, SEO optimization and translation.",
+    tags: ["Next.js", "TypeScript"],
     imageUrl: richardLeImg,
     githubLink: "",
     deployLink: "https://www.richardle.com.au/",
@@ -242,8 +248,8 @@ export const projectsData: Project[] = [
   },
   {
     title: "Golo CRM",
-    description: `Golo CRM is a full-stack CRM application built with NextJS. Collaborated with GeniusIT team to build key features such as document database, document management dashboard and landing page`,
-    tags: ["NextJS", "TypeScript", "Vercel", "Turso", "drizzle"],
+    description: `Golo CRM is a full-stack CRM application built with Next.js. Collaborated with GeniusIT team to build key features such as document database, document management dashboard and landing page`,
+    tags: ["Next.js", "TypeScript", "Vercel", "Turso", "drizzle"],
     imageUrl: goloImg,
     githubLink: "",
     deployLink: "https://golocrm.com",
@@ -335,7 +341,7 @@ export const projectsData: Project[] = [
     title: "Personal portfolio website",
     description: `Within this portfolio, you will gain insights into my background, skills, and experiences. Additionally, you will have the opportunity to explore the projects I have completed. Should you wish to get in touch, please feel free to contact me via email or LinkedIn.`,
     tags: [
-      "NextJS",
+      "Next.js",
       "Typescript",
       "Tailwind",
       "Resend API",
