@@ -1,14 +1,44 @@
+"use client";
+
 import React from "react";
+import { useFormState, useFormStatus } from "react-dom";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "@/app/components/Button";
 import { sendEmail } from "@/app/actions/sendEmail";
 
+const SubmitButton = () => {
+  const { pending } = useFormStatus();
+  return (
+    <Button
+      className="max-w-fit bg-ucla-500 text-white hover:bg-ucla-800 font-medium"
+      type="submit"
+      disabled={pending}
+    >
+      {pending ? (
+        "Sending..."
+      ) : (
+        <>
+          Submit
+          <FontAwesomeIcon
+            icon={faPaperPlane}
+            className="transition-all group-hover:translate-x-1 group-hover:-translate-y-1 opacity-90 text-sm "
+          />
+        </>
+      )}
+    </Button>
+  );
+};
+
 const ContactForm = () => {
-  let a;
+  const [state, formAction] = useFormState(
+    (prevState: any, formData: FormData) => sendEmail(formData),
+    null
+  );
+
   return (
     <form
-      action={sendEmail}
+      action={formAction}
       className="mx-auto flex flex-col gap-4 w-[min(100%,38rem)]"
     >
       <label htmlFor="email" className="sr-only">
@@ -22,6 +52,7 @@ const ContactForm = () => {
          transition-all"
         maxLength={500}
         placeholder="Your email"
+        required
       />
       <label htmlFor="message" className="sr-only">
         Message
@@ -35,16 +66,7 @@ const ContactForm = () => {
         required
         maxLength={5000}
       />
-      <Button
-        className="max-w-fit bg-ucla-500 text-white hover:bg-ucla-800 font-medium"
-        type="submit"
-      >
-        Submit
-        <FontAwesomeIcon
-          icon={faPaperPlane}
-          className="transition-all group-hover:translate-x-1 group-hover:-translate-y-1 opacity-90 text-sm "
-        />
-      </Button>
+      <SubmitButton />
     </form>
   );
 };
