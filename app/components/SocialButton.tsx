@@ -36,6 +36,7 @@ const SocialButton = ({ social }: SocialButtonProps) => {
             : selectedSocial.url
         }
         target="_blank"
+        rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={selectedSocial.icon} size="2xl" />
       </a>
