@@ -84,7 +84,7 @@ const Project = ({
           <div className="flex gap-3 justify-start items-center  p-0">
             {githubLink && (
               <Button className="p-0 m-0 text-gray-700  bg-transparent border-none  ">
-                <a href={githubLink} target="_blank">
+                <a href={githubLink} target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon
                     icon={faSquareGithub}
                     size="2xl"
@@ -95,7 +95,7 @@ const Project = ({
             )}
             {deployLink && (
               <Button className="hover:bg-azul bg-gray-700 text-white px-[10px] py-[1.5px] my-1 max-h-[33px] ">
-                <a href={deployLink} target="_blank">
+                <a href={deployLink} target="_blank" rel="noopener noreferrer">
                   {`View live`}
                 </a>
               </Button>
